@@ -1,0 +1,143 @@
+h1 {
+  font-size: 83px;
+  text-align: center;
+  background-color: #59A989;
+  color: #FFDE06;
+  padding: 28px 0px;
+  margin: 0px;
+}
+
+.search_bar {
+  background-color: #E9EEF0;
+  height: 55px;
+  width: 100%;
+}
+
+.fa-search {
+  font-size: 2em;
+  padding: 8px;
+}
+
+#site-search {
+  background-color: #E9EEF0;
+  height: 40px;
+  -webkit-appearance: media-slider;
+  min-width: 90%;
+  font-size: 17px;
+}
+
+/*corps de la page*/
+.propositions_menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lanoteenchantee {
+  text-align: center;
+  background-color: #FFB5AA;
+  padding: 245px 115px;
+  margin: 64px 97px;
+  box-shadow: 0px 0px 10px 4px #777777;
+  -moz-box-shadow: 0px 0px 10px 4px #777777;
+  -webkit-box-shadow: 0px 0px 10px 4px #777777;
+}
+
+.lechicalafrancaise {
+  text-align: center;
+  background-color: #FFE9E7;
+  padding: 245px 115px;
+  margin: 64px 97px;
+  box-shadow: 0px 0px 10px 4px #777777;
+  -moz-box-shadow: 0px 0px 10px 4px #777777;
+  -webkit-box-shadow: 0px 0px 10px 4px #777777;
+}
+
+.ledelicedespapilles {
+  text-align: center;
+  background-color: #FFF6F3;
+  padding: 245px 115px;
+  margin: 64px 97px;
+  box-shadow: 0px 0px 10px 4px #777777;
+  -moz-box-shadow: 0px 0px 10px 4px #777777;
+  -webkit-box-shadow: 0px 0px 10px 4px #777777;
+}
+
+.lapalettedugout {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 245px 115px;
+  margin: 64px 97px;
+  box-shadow: 0px 0px 10px 4px #777777;
+  -moz-box-shadow: 0px 0px 10px 4px #777777;
+  -webkit-box-shadow: 0px 0px 10px 4px #777777;
+}
+
+.menus {
+  width: 561px;
+  height: 737px;
+  margin: 50px;
+}
+
+.prochainement {
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #59A989;
+  color: #FFDE06;
+  margin: 30px auto 150px auto;
+  height: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 5px 65px;
+}
+
+/*pied de page*/
+footer {
+  background-color: #59A989;
+  height: 50px;
+  color: #FFDE06;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.legal {
+  margin: 8px 20px;
+}
+
+.contact {
+  margin: 8px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.bar_footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
