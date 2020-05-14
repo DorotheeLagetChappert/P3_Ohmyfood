@@ -1,34 +1,42 @@
 /*Raccourcis variables*/
+$primaryColor :#59A989;
+$primaryColorText :#FFDE06;
+$searchBarColor :#E9EEF0;
 $Ombre : #777777;
-$vert :#59A989;
-$jaune :#FFDE06;
 /*Header*/
 h1
 {
     font-size: 83px;
     text-align: center;
-    background-color:$vert;
-    color: $jaune;
+    background-color:$primaryColor;
+    color: $primaryColorText;
     padding: 28px 0px;
     margin: 0px;
 }
 .search_bar
 {
-    background-color: #E9EEF0;
-    height: 55px;
-    width: 100%;
+    background-color: $searchBarColor;
+    display: flex;
+    min-width: 100%;
+}
+.btnsearch
+{
+    border: none;
+    background-color: $searchBarColor;
+    min-width: 4%;
 }
 .fa-search
 {
-    font-size: 2em;
-    padding: 8px;
+    font-size: 2.5em;
+    min-width: 10%;
+    color: $primaryColor;
 }
 #site-search
 {
-    background-color: #E9EEF0;
+    background-color: $searchBarColor;
     height: 40px;
     -webkit-appearance: media-slider;
-    min-width: 90%;
+    min-width: 96%;
     font-size: 17px;
 }
 /*corps de la page*/
@@ -37,8 +45,8 @@ h1
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;  
-    margin: 4% 22%;
+    justify-content: space-evenly;  
+    margin: 4% 3%;
 }
 .menus
 {
@@ -83,8 +91,8 @@ i
     font-size: 33px;
     font-weight: bold;
     text-align: center;
-    background-color: $vert;
-    color: $jaune;
+    background-color: $primaryColor;
+    color: $primaryColorText;
     margin: 30px auto 150px auto;
     height: 50px;
     width: fit-content;
@@ -94,9 +102,9 @@ i
 /*pied de page*/
 footer
 {
-    background-color: $vert;
+    background-color: $primaryColor;
     height: 50px;
-    color: $jaune;
+    color: $primaryColorText;
     display: flex;
     justify-content: space-between;
     font-size: 30px;
@@ -125,4 +133,38 @@ a
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+/*Responsive tablette 1024px*/
+@media screen and (max-width:1024px)
+{
+    .menus
+    {
+        min-width: 250px;
+        height: 383px;
+    }
+    .titre1
+    {
+        padding-bottom: 48%;
+    }
+}
+/*Responsive mobile 1024px*/
+@media screen and (max-width:625px)
+{
+    .propositions_menus
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;  
+}
+.menus
+{
+    height: 423px;
+    margin: 30px 135px;
+}
+.titre1
+{
+    padding-top: 48%;
+    padding-bottom: 48%;
+}
 }
