@@ -3,6 +3,11 @@ $primaryColor :#59A989;
 $primaryColorText :#FFDE06;
 $searchBarColor :#E9EEF0;
 $Ombre : #777777;
+/*Général*/
+body
+{
+    margin: 0px;
+}
 /*Header*/
 h1
 {
@@ -60,26 +65,26 @@ h1
 }
 .titre1
 {
-    padding-top: 45%;
-    padding-bottom: 55%;
+    padding-top: 46%;
+    padding-bottom: 56%;
     background:#FFC4C4;
 }
 .titre2
 {
     padding-top: 55%;
-    padding-bottom: 57%;
+    padding-bottom: 58%;
     background:#FFF1FE;
 }
 .titre3
 {
     padding-top: 55%;
-    padding-bottom: 57%;
+    padding-bottom: 58%;
     background:#FAFAFF;
 }
 .titre4
 {
     padding-top: 55%;
-    padding-bottom: 57%;
+    padding-bottom: 58%;
     background:#FFFFFF;
 }
 i
@@ -137,20 +142,64 @@ a
 /*Responsive tablette 1024px*/
 @media screen and (max-width:1024px)
 {
-    .menus
-    {
-        min-width: 250px;
-        height: 383px;
-    }
-    .titre1
-    {
-        padding-bottom: 48%;
-    }
+h1
+{
+        font-size: 75px;
 }
-/*Responsive mobile 1024px*/
+#site-search
+{
+    height: 36px;
+    min-width: 93%;
+    max-width: 95%;
+    font-size: 15px;
+}
+.propositions_menus
+{
+    margin: 9% 3%;
+}
+.menus
+{
+    min-width: 250px;
+    height: 383px;
+}
+.titre1
+{
+    padding-top: 40%;
+    padding-bottom: 54%;
+}
+.titre2
+{
+    padding-top: 58%;
+    padding-bottom: 55%;
+}
+.prochainement
+{
+    font-size: 25px;
+    margin: 30px auto 100px auto;
+    height: 35px;
+    padding: 5px 55px;
+}
+.legal
+{
+    font-size: 25px;
+}
+.contact
+{
+    font-size: 25px;
+}
+}
+/*Responsive mobile 650px*/
 @media screen and (max-width:625px)
 {
-    .propositions_menus
+h1
+{
+    font-size: 60px;
+}
+#site-search
+{
+    min-width: 89%;
+}
+.propositions_menus
 {
     display: flex;
     flex-direction: column;
@@ -159,12 +208,27 @@ a
 }
 .menus
 {
-    height: 423px;
-    margin: 30px 135px;
+    height: 383px;
+    margin: 9% auto;
 }
 .titre1
 {
     padding-top: 48%;
     padding-bottom: 48%;
+}
+.prochainement
+{
+    font-size: 20px;
+    margin: 30px auto 100px auto;
+    height: 30px;
+    padding: 5px 48px;
+}
+.legal
+{
+    font-size: 20px;
+}
+.contact
+{
+    font-size: 20px;
 }
 }
