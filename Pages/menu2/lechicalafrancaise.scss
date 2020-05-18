@@ -1,0 +1,86 @@
+/*Raccourcis variables*/
+$primaryColor :#59A989;
+$primaryColorText :#FFDE06;
+$Ombre : #777777;
+/*Général*/
+body
+{
+    margin: 0px;
+}
+/*Header*/
+h1
+{
+    font-size: 83px;
+    text-align: center;
+    background-color:$primaryColor;
+    color: $primaryColorText;
+    padding: 28px 0px;
+    margin: 0px;
+}
+/*pied de page*/
+footer
+{
+    background-color: $primaryColor;
+    height: 50px;
+    color: $primaryColorText;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: bold;
+}
+.legal
+{
+    margin: 8px 20px;
+}
+.contact
+{
+    margin: 8px 20px;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+    
+    &:visited
+    {
+        color: inherit;
+    }
+}
+.bar_footer
+{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+/*Responsive tablette 1024px*/
+@media screen and (max-width:1024px)
+{
+h1
+{
+        font-size: 75px;
+}
+.legal
+{
+    font-size: 25px;
+}
+.contact
+{
+    font-size: 25px;
+}
+}
+/*Responsive mobile 650px*/
+@media screen and (max-width:625px)
+{
+h1
+{
+    font-size: 60px;
+}
+.legal
+{
+    font-size: 15px;
+}
+.contact
+{
+    font-size: 15px;
+}
+}

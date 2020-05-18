@@ -1,1 +1,81 @@
-/* No CSS *//*# sourceMappingURL=lapalettedugout.css.map */
+@charset "UTF-8";
+/*Raccourcis variables*/
+/*Général*/
+body {
+  margin: 0px;
+}
+
+/*Header*/
+h1 {
+  font-size: 83px;
+  text-align: center;
+  background-color: #59A989;
+  color: #FFDE06;
+  padding: 28px 0px;
+  margin: 0px;
+}
+
+/*pied de page*/
+footer {
+  background-color: #59A989;
+  height: 50px;
+  color: #FFDE06;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.legal {
+  margin: 8px 20px;
+}
+
+.contact {
+  margin: 8px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.bar_footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+/*Responsive tablette 1024px*/
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 75px;
+  }
+  .legal {
+    font-size: 25px;
+  }
+  .contact {
+    font-size: 25px;
+  }
+}
+
+/*Responsive mobile 650px*/
+@media screen and (max-width: 625px) {
+  h1 {
+    font-size: 60px;
+  }
+  .legal {
+    font-size: 15px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=lapalettedugout.css.map */
