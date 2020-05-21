@@ -146,12 +146,12 @@ a:visited {
   h2 {
     font-size: 30px;
   }
+  h3 {
+    font-size: 20px;
+  }
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
-  }
-  .blocmenus .titre {
-    font-size: 20px;
   }
   table caption {
     font-size: 20px;
