@@ -1,6 +1,7 @@
 /*Raccourcis variables*/
 $primaryColor :#59A989;
 $primaryColorText :#FFDE06;
+$Ombre : #777777;
 /*Général*/
 body
 {
@@ -33,6 +34,10 @@ h3
     margin: 1% auto 8% auto;
     min-width: 860px;
     max-width: 684px;
+    box-shadow: 0px 0px 10px 4px $Ombre;
+    -moz-box-shadow: 0px 0px 10px 4px $Ombre;
+    -webkit-box-shadow: 0px 0px 10px 4px $Ombre;
+    opacity: 0.7;
     .choix
     {
         margin-bottom: 10%;
