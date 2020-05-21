@@ -1,7 +1,6 @@
 /*Raccourcis variables*/
 $primaryColor :#59A989;
 $primaryColorText :#FFDE06;
-$Ombre : #777777;
 /*Général*/
 body
 {
@@ -16,6 +15,55 @@ h1
     color: $primaryColorText;
     padding: 28px 0px;
     margin: 0px;
+}
+/*Main*/
+h2
+{
+    text-align: center;
+    font-size: 40px;
+}
+h3
+{
+    font-size: 28px;
+    text-align: center;
+}
+.blocmenus
+{
+    background:#FFF1FE;
+    margin: 1% auto 8% auto;
+    min-width: 860px;
+    max-width: 684px;
+    .choix
+    {
+        margin-bottom: 10%;
+    }
+}
+table
+{
+    border-collapse: separate;
+    margin: auto;
+    table-layout: fixed;
+    max-width: 38%;
+    min-width: 90%;
+    caption
+    {
+        font-size: 25px;
+        padding: 2% 0;
+    }
+    tr
+    {
+        td
+        {
+            font-size: 20px;
+            padding: 2% 0;
+        }
+    }
+}
+h4
+{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 7%;
 }
 /*pied de page*/
 footer
@@ -59,6 +107,34 @@ h1
 {
         font-size: 75px;
 }
+.blocmenus
+{
+    min-width: 90%;
+    max-width: 78%;
+    margin: 0% auto;
+}
+table
+{
+    max-width: 100%;
+    border-spacing: 6px;
+    caption
+    {
+        font-size: 24px;
+    }
+    tr
+    {
+        .plat
+        {
+            width: 66%;
+            font-size: 20px;
+        }
+        .prix
+        {
+            width: 8%;
+            font-size: 20px;
+        }
+    }
+}
 .legal
 {
     font-size: 25px;
@@ -68,12 +144,53 @@ h1
     font-size: 25px;
 }
 }
-/*Responsive mobile 650px*/
+/*Responsive mobile 625px*/
 @media screen and (max-width:625px)
 {
+body
+{
+    width: 100%;
+}
 h1
 {
     font-size: 60px;
+}
+main
+{
+    margin: 0% 2%;
+}
+h2
+{
+    font-size: 30px;
+}
+.blocmenus
+{
+    width: 100%;
+    margin: 1% auto 20% auto;
+    .titre
+    {
+        font-size: 20px;
+    }
+}
+table
+{
+    caption
+    {
+        font-size: 20px;
+    }
+    tr
+    {
+        .plat
+        {
+            width: 70%;
+            font-size: 16px;
+        }
+        .prix
+        {
+            width: 10%;
+            font-size: 16px;
+        }
+    }
 }
 .legal
 {
