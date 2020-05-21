@@ -112,10 +112,20 @@ a:visited {
   }
 }
 
-/*Responsive mobile 650px*/
+/*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
+  body {
+    min-width: 573px;
+  }
   h1 {
     font-size: 60px;
+  }
+  table {
+    min-width: 66%;
+  }
+  .blocText {
+    max-width: 82%;
+    margin: 10% auto;
   }
   .legal {
     font-size: 15px;
