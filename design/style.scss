@@ -1,9 +1,6 @@
 @import "d:\P3_Ohmyfood\design\commun.scss";
 /*Général*/
-body
-{
-    margin: 0px;
-}
+@include global;
 /*Header*/
 @include header;
 .search_bar
@@ -55,25 +52,25 @@ body
 {
     padding-top: 46%;
     padding-bottom: 56%;
-    background:#FFC4C4;
+    background:$backgroundMenu1;
 }
 .titre2
 {
     padding-top: 55%;
     padding-bottom: 58%;
-    background:#FFF1FE;
+    background:$backgroundMenu2;
 }
 .titre3
 {
     padding-top: 55%;
     padding-bottom: 58%;
-    background:#FAFAFF;
+    background:$backgroundMenu3;
 }
 .titre4
 {
     padding-top: 55%;
     padding-bottom: 58%;
-    background:#FFFFFF;
+    background:$backgroundMenu4;
 }
 i
 {
@@ -95,12 +92,9 @@ i
 /*pied de page*/
 @include footer;
 /*Responsive tablette 1024px*/
+@include responsive_tablette;
 @media screen and (max-width:1024px)
 {
-h1
-{
-        font-size: 75px;
-}
 #site-search
 {
     height: 36px;
@@ -134,22 +128,11 @@ h1
     height: 35px;
     padding: 5px 55px;
 }
-.legal
-{
-    font-size: 25px;
-}
-.contact
-{
-    font-size: 25px;
-}
 }
 /*Responsive mobile 625px*/
+@include responsive_mobile;
 @media screen and (max-width:625px)
 {
-h1
-{
-    font-size: 60px;
-}
 #site-search
 {
     min-width: 89%;
@@ -177,13 +160,5 @@ h1
     margin: 30px auto 100px auto;
     height: 30px;
     padding: 5px 48px;
-}
-.legal
-{
-    font-size: 15px;
-}
-.contact
-{
-    font-size: 15px;
 }
 }

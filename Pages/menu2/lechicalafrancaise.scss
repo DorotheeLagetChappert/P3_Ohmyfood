@@ -10,7 +10,7 @@ body
 @include main_pages_menus ;
 .blocmenus
 {
-    background:#FFF1FE;
+    background: $backgroundMenu2;
 }
 /*pied de page*/
 @include footer;

@@ -10,7 +10,7 @@ body
 @include main_pages_menus ;
 .blocmenus
 {
-    background:#FFC4C4;
+    background: $backgroundMenu1;
     .titre
     {
         font-size: 28px;

@@ -1,23 +1,35 @@
 /*Couleurs*/
-$primaryColor :#59A989;
-$primaryColorText :#FFDE06;
-$searchBarColor :#E9EEF0;
-$Ombre : #777777;
-$surtitleColor :white;
-$ColorText : black;
+$primaryColor : rgb(86, 156, 135);
+$primaryColorText : rgb(240, 198, 79);
+$searchBarColor : rgb(237, 237, 237);
+$Ombre : rgb(231, 231, 231);
+$surtitleColor :rgb(255, 255, 255);
+$ColorText : rgb(0, 0, 0);
+$backgroundMenu1:rgb(252, 223, 218);
+$backgroundMenu2: rgb(254,245,253);
+$backgroundMenu3:rgb(249, 249, 249);
+$backgroundMenu4:rgb(253, 255, 253);
 /*en-tête*/
-@mixin header
+@mixin header 
 {
     h1
     {
         font-size: 83px;
         text-align: center;
-        background-color:$primaryColor;
+        background-color: $primaryColor;
         color: $primaryColorText;
         padding: 28px 0px;
         margin: 0px;
     }
 }
+@mixin global
+{
+    body 
+    {
+        margin: 0px;
+    }
+}
+/*main*/
 @mixin main_pages_menus 
 {
     h2

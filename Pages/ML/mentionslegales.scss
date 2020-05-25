@@ -1,8 +1,9 @@
 @import "d:\P3_Ohmyfood\design\commun.scss";
 /*Général*/
+@include global;
 body
 {
-    margin: 0px;
+    margin-bottom: 8%;
 }
 /*Header*/
 @include header;
@@ -31,7 +32,7 @@ table
         td
         {
             border: 1px solid $primaryColor;
-            width: 50%;
+            width: 40%;
             padding: 1% 5% 1% 2%;
         }
     }
@@ -87,6 +88,7 @@ td
 body
 {
     min-width: 573px;
+    margin-bottom: 30%;
 }
 h1
 {
