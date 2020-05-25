@@ -1,23 +1,11 @@
-/*Raccourcis variables*/
-$primaryColor :#59A989;
-$primaryColorText :#FFDE06;
-$searchBarColor :#E9EEF0;
-$Ombre : #777777;
+@import "d:\P3_Ohmyfood\design\commun.scss";
 /*Général*/
 body
 {
     margin: 0px;
 }
 /*Header*/
-h1
-{
-    font-size: 83px;
-    text-align: center;
-    background-color:$primaryColor;
-    color: $primaryColorText;
-    padding: 28px 0px;
-    margin: 0px;
-}
+@include header;
 .search_bar
 {
     background-color: $searchBarColor;
@@ -105,40 +93,7 @@ i
     padding: 5px 65px;
 }
 /*pied de page*/
-footer
-{
-    background-color: $primaryColor;
-    height: 50px;
-    color: $primaryColorText;
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    font-weight: bold;
-}
-.legal
-{
-    margin: 8px 20px;
-}
-.contact
-{
-    margin: 8px 20px;
-}
-a
-{
-    text-decoration: none;
-    color: inherit;
-    
-    &:visited
-    {
-        color: inherit;
-    }
-}
-.bar_footer
-{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-}
+@include footer;
 /*Responsive tablette 1024px*/
 @media screen and (max-width:1024px)
 {

@@ -114,7 +114,7 @@ i {
 }
 
 /*pied de page*/
-footer {
+.bar_footer {
   background-color: #59A989;
   height: 50px;
   color: #FFDE06;
@@ -126,6 +126,9 @@ footer {
           justify-content: space-between;
   font-size: 30px;
   font-weight: bold;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 .legal {
@@ -143,12 +146,6 @@ a {
 
 a:visited {
   color: inherit;
-}
-
-.bar_footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
 }
 
 /*Responsive tablette 1024px*/

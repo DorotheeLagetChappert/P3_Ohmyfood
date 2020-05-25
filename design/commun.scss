@@ -1,0 +1,220 @@
+/*Couleurs*/
+$primaryColor :#59A989;
+$primaryColorText :#FFDE06;
+$searchBarColor :#E9EEF0;
+$Ombre : #777777;
+$surtitleColor :white;
+$ColorText : black;
+/*en-tête*/
+@mixin header
+{
+    h1
+    {
+        font-size: 83px;
+        text-align: center;
+        background-color:$primaryColor;
+        color: $primaryColorText;
+        padding: 28px 0px;
+        margin: 0px;
+    }
+}
+@mixin main_pages_menus 
+{
+    h2
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+    h3
+    {
+        font-size: 28px;
+        text-align: center;
+    }
+    .blocmenus
+    {
+        margin: 1% auto 8% auto;
+        min-width: 860px;
+        max-width: 684px;
+        box-shadow: 0px 0px 10px 4px $Ombre;
+        -moz-box-shadow: 0px 0px 10px 4px $Ombre;
+        -webkit-box-shadow: 0px 0px 10px 4px $Ombre;
+        opacity: 0.7;
+            .choix
+        {
+            margin-bottom: 10%;
+        }
+    }
+    table
+    {
+        border-collapse: separate;
+        margin: auto;
+        table-layout: fixed;
+        max-width: 38%;
+        min-width: 90%;
+        caption
+        {
+            font-size: 25px;
+            padding: 2% 0;
+        }
+        tr
+        {
+            td
+            {
+                font-size: 20px;
+                padding: 2% 0;
+            }
+        }
+    }
+    h4
+    {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 7%;
+    } 
+}
+/*pied de page*/
+@mixin footer 
+{
+    .bar_footer
+    {
+        background-color: $primaryColor;
+        height: 50px;
+        color: $primaryColorText;
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        font-weight: bold;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+    .legal
+    {
+        margin: 8px 20px;
+    }
+    .contact
+    {
+        margin: 8px 20px;
+    }
+    a
+    {
+        text-decoration: none;
+        color: inherit;
+        
+        &:visited
+        {
+            color: inherit;
+        }
+    }   
+}
+/*responsive 1024*/
+@mixin responsive_tablette 
+{
+    @media screen and (max-width:1024px)
+    {
+        h1
+        {
+            font-size: 75px;
+        }
+        .blocmenus
+        {
+            min-width: 90%;
+            max-width: 78%;
+            margin: 0% auto;
+        }
+        table
+        {
+            max-width: 100%;
+            border-spacing: 6px;
+            caption
+            {
+                font-size: 24px;
+            }
+            tr
+            {
+                .plat
+                {
+                    width: 66%;
+                    font-size: 20px;
+                }
+                .prix
+                {
+                    width: 8%;
+                    font-size: 20px;
+                }
+            }
+        }
+        .legal
+        {
+            font-size: 25px;
+        }
+        .contact
+        {
+            font-size: 25px;
+        }
+    }
+}
+/*responsive 625*/
+@mixin responsive_mobile
+{
+    @media screen and (max-width:625px)
+    {
+        body
+        {
+            width: 100%;
+        }
+        h1
+        {
+            font-size: 60px;
+        }
+        main
+        {
+            margin: 0% 2%;
+        }
+        h2
+        {
+            font-size: 30px;
+        }
+        h3
+        {
+            font-size: 20px;
+        }
+        .blocmenus
+        {
+            width: 100%;
+            margin: 1% auto 20% auto;
+            .titre
+            {
+                font-size: 20px;
+            }
+        }
+        table
+        {
+            caption
+            {
+                font-size: 20px;
+            }
+            tr
+            {
+                .plat
+                {
+                    width: 70%;
+                    font-size: 16px;
+                }
+                .prix
+                {
+                    width: 10%;
+                    font-size: 16px;
+                }
+            }
+        }
+        .legal
+        {
+            font-size: 15px;
+        }
+        .contact
+        {
+            font-size: 15px;
+        }
+    }
+}
