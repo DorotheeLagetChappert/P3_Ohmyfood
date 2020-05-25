@@ -104,6 +104,12 @@ a:visited {
   h1 {
     font-size: 75px;
   }
+  h3 {
+    font-size: 18px;
+  }
+  td {
+    font-size: 16px;
+  }
   .legal {
     font-size: 25px;
   }
