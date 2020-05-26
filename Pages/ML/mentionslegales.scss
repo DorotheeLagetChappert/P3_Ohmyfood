@@ -78,6 +78,10 @@ table
     {
         font-size: 16px;
     }
+    .blocText
+    {
+        margin: 8% 20%;
+    }
 }
 /*Responsive mobile 625px*/
 @include footer_mobile;
@@ -98,6 +102,6 @@ table
     .blocText
     {
         max-width: 82%;
-        margin: 10% auto;
+        margin: 14% auto;
     }
 }

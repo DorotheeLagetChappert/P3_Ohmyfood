@@ -124,10 +124,6 @@ $backgroundMenu4:rgb(253, 255, 253);
 {
     @media screen and (max-width:1024px)
     {
-        main
-        {
-            margin-bottom: 15%;
-        }
         h1
         {
             font-size: 75px;
@@ -136,7 +132,7 @@ $backgroundMenu4:rgb(253, 255, 253);
         {
             min-width: 90%;
             max-width: 78%;
-            margin: 0% auto;
+            margin: 6% auto 15% auto;
         }
         table
         {

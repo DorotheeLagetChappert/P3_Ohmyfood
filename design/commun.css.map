@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": ";AAAA,YAAY;AAWZ,WAAW;AAoBX,QAAQ;AAuDR,gBAAgB;AAmChB,mBAAmB;AAyDnB,kBAAkB",
+    "mappings": ";AAAA,YAAY;AAWZ,WAAW;AAoBX,QAAQ;AAuDR,gBAAgB;AAmChB,mBAAmB;AAqDnB,kBAAkB",
     "sources": [
         "commun.scss"
     ],
