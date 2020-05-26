@@ -93,6 +93,7 @@ i
 @include footer;
 /*Responsive tablette 1024px*/
 @include responsive_tablette;
+@include footer_tablette;
 @media screen and (max-width:1024px)
 {
 #site-search
@@ -131,6 +132,7 @@ i
 }
 /*Responsive mobile 625px*/
 @include responsive_mobile;
+@include footer_mobile;
 @media screen and (max-width:625px)
 {
 #site-search

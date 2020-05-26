@@ -124,6 +124,10 @@ $backgroundMenu4:rgb(253, 255, 253);
 {
     @media screen and (max-width:1024px)
     {
+        main
+        {
+            margin-bottom: 15%;
+        }
         h1
         {
             font-size: 75px;
@@ -156,6 +160,12 @@ $backgroundMenu4:rgb(253, 255, 253);
                 }
             }
         }
+    }
+}
+@mixin footer_tablette 
+{
+    @media screen and (max-width:1024px)
+    {
         .legal
         {
             font-size: 25px;
@@ -181,7 +191,7 @@ $backgroundMenu4:rgb(253, 255, 253);
         }
         main
         {
-            margin: 0% 2%;
+            margin: 0%;
         }
         h2
         {
@@ -220,6 +230,12 @@ $backgroundMenu4:rgb(253, 255, 253);
                 }
             }
         }
+    }
+}
+@mixin footer_mobile 
+{
+    @media screen and (max-width:625px)
+    {
         .legal
         {
             font-size: 15px;

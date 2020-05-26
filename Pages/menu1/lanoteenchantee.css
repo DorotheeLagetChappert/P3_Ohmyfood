@@ -104,7 +104,8 @@ a:visited {
 }
 
 /*Responsive tablette 1024px*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) 
+{
   h1 {
     font-size: 75px;
   }

@@ -16,5 +16,7 @@ body
 @include footer;
 /*Responsive tablette 1024px*/
 @include responsive_tablette;
+@include footer_tablette;
 /*Responsive mobile 625px*/
 @include responsive_mobile;
+@include footer_mobile;

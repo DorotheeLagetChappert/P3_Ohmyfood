@@ -59,55 +59,45 @@ table
 /*pied de page*/
 @include footer;
 /*Responsive tablette 1024px*/
+@include footer_tablette;
 @media screen and (max-width:1024px)
 {
-h1
-{
-    font-size: 75px;
-}
-h3
-{
-    font-size: 18px;
-}
-td
-{
-    font-size: 16px;
-}
-.legal
-{
-    font-size: 25px;
-}
-.contact
-{
-    font-size: 25px;
-}
+    main 
+    {
+        margin-bottom: 15%;
+    }
+    h1
+    {
+        font-size: 75px;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
+    td
+    {
+        font-size: 16px;
+    }
 }
 /*Responsive mobile 625px*/
+@include footer_mobile;
 @media screen and (max-width:625px)
 {
-body
-{
-    min-width: 573px;
-}
-h1
-{
-    font-size: 60px;
-}
-table
-{
-    min-width: 66%;
-}
-.blocText
-{
-    max-width: 82%;
-    margin: 10% auto;
-}
-.legal
-{
-    font-size: 15px;
-}
-.contact
-{
-    font-size: 15px;
-}
+    body
+    {
+        min-width: 655px;
+    }
+    h1
+    {
+        font-size: 60px;
+    }
+    table
+    {
+        min-width: 66%;
+    }
+    .blocText
+    {
+        max-width: 82%;
+        margin: 10% auto;
+    }
 }
