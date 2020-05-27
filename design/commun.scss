@@ -124,6 +124,10 @@ $backgroundMenu4:rgb(253, 255, 253);
 {
     @media screen and (max-width:1024px)
     {
+        body
+        {
+            height: 1680px;
+        }
         h1
         {
             font-size: 75px;
@@ -180,6 +184,7 @@ $backgroundMenu4:rgb(253, 255, 253);
         body
         {
             width: 100%;
+            height: 1190px;
         }
         h1
         {

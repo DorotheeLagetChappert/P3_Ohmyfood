@@ -62,6 +62,10 @@ table
 @include footer_tablette;
 @media screen and (max-width:1024px)
 {
+    body
+    {
+        height: 1900px;
+    }
     main 
     {
         margin-bottom: 15%;
@@ -90,6 +94,7 @@ table
     body
     {
         min-width: 655px;
+        height: 2020px;
     }
     h1
     {
