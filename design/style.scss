@@ -78,16 +78,15 @@ i
 }
 .prochainement
 {
-    font-size: 33px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     background-color: $primaryColor;
     color: $primaryColorText;
     margin: 30px auto 150px auto;
-    height: 50px;
     width: fit-content;
     border-radius: 10px;
-    padding: 5px 65px;
+    padding: 1% 9%;
 }
 /*pied de page*/
 @include footer;

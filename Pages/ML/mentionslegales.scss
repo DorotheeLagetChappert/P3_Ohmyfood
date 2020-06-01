@@ -20,20 +20,23 @@ table
     border-collapse: collapse;
     margin: auto;
     table-layout: fixed;
-    max-width: 38%;
+    max-width: 98%;
     min-width: 60%;
     caption
     {
         padding: 28px 0px;
         margin: 0px;
     }
-    tr
+    tbody
     {
-        td
+        tr
         {
-            border: 1px solid $primaryColor;
-            width: 50%;
-            padding: 1% 5% 1% 2%;
+            td
+            {
+                border: 1px solid $primaryColor;
+                width: 50%;
+                padding: 1% 5% 1% 2%;
+            }
         }
     }
 }
