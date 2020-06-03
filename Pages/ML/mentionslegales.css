@@ -1,5 +1,10 @@
 @charset "UTF-8";
-/*Raccourcis variables*/
+/*Couleurs*/
+/*en-tête*/
+/*main*/
+/*pied de page*/
+/*responsive 1024*/
+/*responsive 625*/
 /*Général*/
 body {
   margin: 0px;
@@ -9,10 +14,14 @@ body {
 h1 {
   font-size: 83px;
   text-align: center;
-  background-color: #59A989;
-  color: #FFDE06;
+  background-color: #569c87;
+  color: #f0c64f;
   padding: 28px 0px;
   margin: 0px;
+}
+
+main {
+  margin-bottom: 15%;
 }
 
 h2 {
@@ -27,7 +36,7 @@ table {
   border-collapse: collapse;
   margin: auto;
   table-layout: fixed;
-  max-width: 38%;
+  max-width: 98%;
   min-width: 60%;
 }
 
@@ -36,8 +45,8 @@ table caption {
   margin: 0px;
 }
 
-table tr td {
-  border: 1px solid #59A989;
+table tbody tr td {
+  border: 1px solid #569c87;
   width: 50%;
   padding: 1% 5% 1% 2%;
 }
@@ -62,10 +71,10 @@ table tr td {
 }
 
 /*pied de page*/
-footer {
-  background-color: #59A989;
+.bar_footer {
+  background-color: #569c87;
   height: 50px;
-  color: #FFDE06;
+  color: #f0c64f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,6 +83,9 @@ footer {
           justify-content: space-between;
   font-size: 30px;
   font-weight: bold;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 .legal {
@@ -93,14 +105,23 @@ a:visited {
   color: inherit;
 }
 
-.bar_footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-}
-
 /*Responsive tablette 1024px*/
 @media screen and (max-width: 1024px) {
+  .legal {
+    font-size: 25px;
+  }
+  .contact {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    height: 1900px;
+  }
+  main {
+    margin-bottom: 15%;
+  }
   h1 {
     font-size: 75px;
   }
@@ -110,18 +131,25 @@ a:visited {
   td {
     font-size: 16px;
   }
-  .legal {
-    font-size: 25px;
-  }
-  .contact {
-    font-size: 25px;
+  .blocText {
+    margin: 8% 20%;
   }
 }
 
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
+  .legal {
+    font-size: 15px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 625px) {
   body {
-    min-width: 573px;
+    min-width: 655px;
+    height: 2020px;
   }
   h1 {
     font-size: 60px;
@@ -131,13 +159,7 @@ a:visited {
   }
   .blocText {
     max-width: 82%;
-    margin: 10% auto;
-  }
-  .legal {
-    font-size: 15px;
-  }
-  .contact {
-    font-size: 15px;
+    margin: 14% auto;
   }
 }
 /*# sourceMappingURL=mentionslegales.css.map */
