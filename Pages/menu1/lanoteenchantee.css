@@ -38,7 +38,6 @@ h3 {
   box-shadow: 0px 0px 10px 4px #e7e7e7;
   -moz-box-shadow: 0px 0px 10px 4px #e7e7e7;
   -webkit-box-shadow: 0px 0px 10px 4px #e7e7e7;
-  opacity: 0.7;
 }
 
 .blocmenus .choix {
@@ -121,9 +120,6 @@ a:visited {
 
 /*Responsive tablette 1024px*/
 @media screen and (max-width: 1024px) {
-  body {
-    height: 1680px;
-  }
   h1 {
     font-size: 75px;
   }
@@ -159,10 +155,6 @@ a:visited {
 
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
-  body {
-    width: 100%;
-    height: 1190px;
-  }
   h1 {
     font-size: 60px;
   }

@@ -20,8 +20,7 @@ table
     border-collapse: collapse;
     margin: auto;
     table-layout: fixed;
-    max-width: 98%;
-    min-width: 60%;
+    width: 90%;
     caption
     {
         padding: 28px 0px;
@@ -34,7 +33,6 @@ table
             td
             {
                 border: 1px solid $primaryColor;
-                width: 50%;
                 padding: 1% 5% 1% 2%;
             }
         }
@@ -42,10 +40,9 @@ table
 }
 .blocText
 {
-    margin: 3% 20%;
+    margin: 3% 5%;
     text-align: justify;
-    max-width: 60%;
-    min-width: 11%;
+    width: 90%;
     h3
     {
         text-align: center;
@@ -85,10 +82,6 @@ table
     {
         font-size: 16px;
     }
-    .blocText
-    {
-        margin: 8% 20%;
-    }
 }
 /*Responsive mobile 625px*/
 @include footer_mobile;
@@ -105,11 +98,10 @@ table
     }
     table
     {
-        min-width: 66%;
+        min-width: 90%;
     }
     .blocText
     {
-        max-width: 82%;
-        margin: 14% auto;
+        margin: 8% 5%;
     }
 }

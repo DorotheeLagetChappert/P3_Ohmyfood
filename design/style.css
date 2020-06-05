@@ -71,35 +71,71 @@ h1 {
   -moz-box-shadow: 0px 0px 10px 4px #e7e7e7;
   -webkit-box-shadow: 0px 0px 10px 4px #e7e7e7;
   min-width: 400px;
-  height: 550px;
+  height: 100%;
 }
 
 .titre1 {
-  padding-top: 46%;
-  padding-bottom: 55%;
+  padding: 40% 11%;
   background: #fcdfda;
 }
 
 .titre2 {
-  padding-top: 55%;
-  padding-bottom: 58%;
+  padding: 47% 11%;
   background: #fef5fd;
 }
 
 .titre3 {
-  padding-top: 55%;
-  padding-bottom: 58%;
+  padding: 46% 11%;
   background: #f9f9f9;
 }
 
 .titre4 {
-  padding-top: 55%;
-  padding-bottom: 58%;
+  padding: 46% 11%;
   background: #fdfffd;
 }
 
 i {
   font-size: 3em;
+}
+
+.fontMenu1 {
+  font-family: "Devonshire", sans-serif;
+  font-size: 28px;
+}
+
+.fontMenu2 {
+  font-family: "Croissant One", sans-serif;
+  font-size: 23px;
+}
+
+.fontMenu3 {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 32px;
+}
+
+.fontMenu4 {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 29px;
+}
+
+.fontp1 {
+  font-family: "Averia Libre", sans-serif;
+  font-size: 40px;
+}
+
+.fontp2 {
+  font-family: "Judson", sans-serif;
+  font-size: 40px;
+}
+
+.fontp3 {
+  font-family: "Kalam", sans-serif;
+  font-size: 40px;
+}
+
+.fontp4 {
+  font-family: "Kalam", sans-serif;
+  font-size: 40px;
 }
 
 .prochainement {
@@ -201,12 +237,37 @@ a:visited {
     height: 383px;
   }
   .titre1 {
-    padding-top: 40%;
-    padding-bottom: 54%;
+    padding: 36% 11%;
   }
   .titre2 {
-    padding-top: 58%;
-    padding-bottom: 55%;
+    padding: 49% 4%;
+  }
+  .titre3 {
+    padding: 44% 4%;
+  }
+  .titre4 {
+    padding: 43% 11%;
+  }
+  .fontMenu2 {
+    font-size: 20px;
+  }
+  .fontMenu3 {
+    font-size: 28px;
+  }
+  .fontMenu4 {
+    font-size: 27px;
+  }
+  .fontp1 {
+    font-size: 30px;
+  }
+  .fontp2 {
+    font-size: 30px;
+  }
+  .fontp3 {
+    font-size: 30px;
+  }
+  .fontp4 {
+    font-size: 30px;
   }
   .prochainement {
     font-size: 25px;
@@ -217,10 +278,6 @@ a:visited {
 
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
-  body {
-    width: 100%;
-    height: 1190px;
-  }
   h1 {
     font-size: 60px;
   }
@@ -267,9 +324,8 @@ a:visited {
     min-width: 89%;
   }
   .propositions_menus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -279,22 +335,23 @@ a:visited {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 4% 2%;
+    margin: 4% 8%;
   }
   .menus {
     margin: 6% 2%;
+    max-width: 60%;
   }
   .titre1 {
-    padding: 38% 0%;
+    padding: 36% 0%;
   }
   .titre2 {
-    padding: 46% 0%;
+    padding: 49% 0%;
   }
   .titre3 {
-    padding: 46% 0%;
+    padding: 44% 0%;
   }
   .titre4 {
-    padding: 46% 0%;
+    padding: 43% 0%;
   }
   .prochainement {
     font-size: 20px;
