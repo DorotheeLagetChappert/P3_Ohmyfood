@@ -47,71 +47,92 @@
     -moz-box-shadow: 0px 0px 10px 4px $Ombre;
     -webkit-box-shadow: 0px 0px 10px 4px $Ombre;
     min-width: 400px;
-    height: 100%;
 }
-.titre1
+.menubox1
 {
-    padding: 40% 11%;
+    padding: 42% 11%;
     background:$backgroundMenu1;
+    @include menuEffect;
+    .titre1
+    {
+        @include zoomTitle;
+        i
+        {
+            font-size: 3em;
+        }
+        .fontMenu1
+        {
+            font-family: "Devonshire", sans-serif;
+            font-size: 28px;
+            color: $colorMenu1;
+        }
+        .fontp1
+        {
+            font-family: "Averia Libre", sans-serif;
+            font-size: 39px;
+            color: $colorMenu1;
+        }
+    }
 }
-.titre2
+.menubox2
 {
-    padding: 47% 11%;
+    padding: 49% 11%;
     background:$backgroundMenu2;
+    @include menuEffect;
+    .titre2
+    {
+        @include zoomTitle;
+        .fontMenu2
+        {
+            font-family: "Croissant One", sans-serif;
+            font-size: 23px;
+        }
+        .fontp2
+        {
+            font-family: "Judson", sans-serif;
+            font-size: 40px;
+        }
+    }
 }
-.titre3
+.menubox3
 {
-    padding: 46% 11%;
+    padding: 49% 11%;
     background:$backgroundMenu3;
+    @include menuEffect;
+    .titre3
+    {
+        @include zoomTitle;
+        .fontMenu3
+        {
+            font-family: "Dancing Script", sans-serif;
+            font-size: 32px;
+        }
+        .fontp3
+        {
+            font-family: "Kalam", sans-serif;
+            font-size: 40px;
+        }
+    }
 }
-.titre4
+.menubox4
 {
-    padding: 46% 11%;
+    padding: 49% 11%;
     background:$backgroundMenu4;
-}
-i
-{
-    font-size: 3em;
-}
-.fontMenu1
-{
-    font-family: "Devonshire", sans-serif;
-    font-size: 28px;
-}
-.fontMenu2
-{
-    font-family: "Croissant One", sans-serif;
-    font-size: 23px;
-}
-.fontMenu3
-{
-    font-family: "Dancing Script", sans-serif;
-    font-size: 32px;
-}
-.fontMenu4
-{
-    font-family: "Kaushan Script", sans-serif;
-    font-size: 29px;
-}
-.fontp1
-{
-    font-family: "Averia Libre", sans-serif;
-    font-size: 40px;
-}
-.fontp2
-{
-    font-family: "Judson", sans-serif;
-    font-size: 40px;
-}
-.fontp3
-{
-    font-family: "Kalam", sans-serif;
-    font-size: 40px;
-}
-.fontp4
-{
-    font-family: "Kalam", sans-serif;
-    font-size: 40px;
+    @include menuEffect;
+    .titre4
+    {
+        @include zoomTitle;
+        .fontMenu4
+        {
+            font-family: "Kaushan Script", sans-serif;
+            font-size: 29px;
+        }
+        .fontp4
+        {
+            font-family: "Kalam", sans-serif;
+            font-size: 40px;
+        }
+    }
 }
 .prochainement
 {
@@ -124,6 +145,25 @@ i
     width: fit-content;
     border-radius: 10px;
     padding: 1% 9%;
+}
+.fa-circle
+{
+    font-size: 35%;
+}
+#circle1
+{
+    @include ellipseAnim;
+    animation-delay: 0s;
+}
+#circle2
+{
+    @include ellipseAnim;
+    animation-delay: 0.1s;
+}
+#circle3
+{
+    @include ellipseAnim;
+    animation-delay: 0.2s;
 }
 /*pied de page*/
 @include footer;
@@ -141,62 +181,89 @@ i
 }
 .propositions_menus
 {
-    margin: 9% 3%;
+    margin: 6% 3%;
 }
 .menus
 {
-    min-width: 250px;
-    height: 383px;
+    min-width: 256px;
 }
-.titre1
+.menubox1
 {
-    padding: 36% 11%;
+    padding: 38% 11%;
+    .titre1
+    {
+        @include zoomTitleTablet;
+        i
+        {
+            font-size: 2.5em;
+        }
+        .fontMenu1
+        {
+            font-size: 24px;
+        }
+        .fontp1
+        {
+            font-size: 28px;
+        }
+    }
 }
-.titre2
+.menubox2
 {
     padding: 49% 4%;
+    .titre2
+    {
+        @include zoomTitleTablet;
+        .fontMenu2
+        {
+            font-size: 18px;
+        }
+        .fontp2
+        {
+            font-size: 28px;
+        }
+    }
 }
-.titre3
+.menubox3
 {
     padding: 44% 4%;
+    .titre3
+    {
+        @include zoomTitleTablet;
+        .fontMenu3
+        {
+            font-size: 24px;
+        }
+        .fontp3
+        {
+            font-size: 28px;
+        }
+    }
 }
-.titre4
+.menubox4
 {
     padding: 43% 11%;
-}
-.fontMenu2
-{
-    font-size: 20px;
-}
-.fontMenu3
-{
-    font-size: 28px;
-}
-.fontMenu4
-{
-    font-size: 27px;
-}
-.fontp1
-{
-    font-size: 30px;
-}
-.fontp2
-{
-    font-size: 30px;
-}
-.fontp3
-{
-    font-size: 30px;
-}
-.fontp4
-{
-    font-size: 30px;
+    .titre4
+    {
+        @include zoomTitleTablet;
+        .fontMenu4
+        {
+            font-size: 24px;
+        }
+        .fontp4
+        {
+            font-size: 28px;
+        }
+    }
 }
 .prochainement
 {
     font-size: 25px;
     margin: 30px auto 100px auto;
     padding: 5px 55px;
+}
+.fa-circle
+{
+    font-size: 25%;
 }
 }
 /*Responsive mobile 625px*/
@@ -221,19 +288,19 @@ i
     margin: 6% 2%;
     max-width: 60%;
 }
-.titre1
+.menubox1
 {
     padding: 36% 0%;
 }
-.titre2
+.menubox2
 {
     padding: 49% 0%;
 }
-.titre3
+.menubox3
 {
     padding: 44% 0%;
 }
-.titre4
+.menubox4
 {
     padding: 43% 0%;
 }
@@ -242,6 +309,6 @@ i
 {
     font-size: 20px;
     margin: 30px auto 100px auto;
-    padding: 5px 48px;
+    padding: 5px 30px;
 }
 }

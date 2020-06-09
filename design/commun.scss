@@ -9,6 +9,44 @@ $backgroundMenu1:rgb(252, 223, 218);
 $backgroundMenu2: rgb(254,245,253);
 $backgroundMenu3:rgb(249, 249, 249);
 $backgroundMenu4:rgb(253, 255, 253);
+$colorMenu1 : rgb(60, 18, 24);
+/*Animations*/
+@mixin zoomTitle 
+{
+    &:hover
+    {
+        transform: scale(1.5);
+    } 
+}
+@mixin menuEffect
+{
+    overflow: hidden;
+    &:hover
+    {
+        opacity: 0.8;
+    }
+}
+@mixin zoomTitleTablet 
+{
+    &:hover
+        {
+            transform: scale(1.2);
+        }
+}
+@mixin ellipseAnim 
+{
+    animation-name: ellipse;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes ellipse
+{
+    0%, 100% {transform: translateY(0);}
+    10%, 30%, 50%, 70% {transform: translateY(-8px);}
+    20%, 40%, 60% {transform: translateY(8px);}
+    80% {transform: translateY(6.4px);}
+    90% {transform: translateY(-6.4px);}
+}
 /*en-tête*/
 @mixin header 
 {

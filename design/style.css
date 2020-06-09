@@ -1,5 +1,63 @@
 @charset "UTF-8";
 /*Couleurs*/
+/*Animations*/
+@-webkit-keyframes ellipse {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+@keyframes ellipse {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+
 /*en-tête*/
 /*main*/
 /*pied de page*/
@@ -71,69 +129,110 @@ h1 {
   -moz-box-shadow: 0px 0px 10px 4px #e7e7e7;
   -webkit-box-shadow: 0px 0px 10px 4px #e7e7e7;
   min-width: 400px;
-  height: 100%;
 }
 
-.titre1 {
-  padding: 40% 11%;
+.menubox1 {
+  padding: 42% 11%;
   background: #fcdfda;
+  overflow: hidden;
 }
 
-.titre2 {
-  padding: 47% 11%;
-  background: #fef5fd;
+.menubox1:hover {
+  opacity: 0.8;
 }
 
-.titre3 {
-  padding: 46% 11%;
-  background: #f9f9f9;
+.menubox1 .titre1:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
-.titre4 {
-  padding: 46% 11%;
-  background: #fdfffd;
-}
-
-i {
+.menubox1 .titre1 i {
   font-size: 3em;
 }
 
-.fontMenu1 {
+.menubox1 .titre1 .fontMenu1 {
   font-family: "Devonshire", sans-serif;
   font-size: 28px;
+  color: #3c1218;
 }
 
-.fontMenu2 {
+.menubox1 .titre1 .fontp1 {
+  font-family: "Averia Libre", sans-serif;
+  font-size: 39px;
+  color: #3c1218;
+}
+
+.menubox2 {
+  padding: 49% 11%;
+  background: #fef5fd;
+  overflow: hidden;
+}
+
+.menubox2:hover {
+  opacity: 0.8;
+}
+
+.menubox2 .titre2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.menubox2 .titre2 .fontMenu2 {
   font-family: "Croissant One", sans-serif;
   font-size: 23px;
 }
 
-.fontMenu3 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 32px;
-}
-
-.fontMenu4 {
-  font-family: "Kaushan Script", sans-serif;
-  font-size: 29px;
-}
-
-.fontp1 {
-  font-family: "Averia Libre", sans-serif;
-  font-size: 40px;
-}
-
-.fontp2 {
+.menubox2 .titre2 .fontp2 {
   font-family: "Judson", sans-serif;
   font-size: 40px;
 }
 
-.fontp3 {
+.menubox3 {
+  padding: 49% 11%;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.menubox3:hover {
+  opacity: 0.8;
+}
+
+.menubox3 .titre3:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.menubox3 .titre3 .fontMenu3 {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 32px;
+}
+
+.menubox3 .titre3 .fontp3 {
   font-family: "Kalam", sans-serif;
   font-size: 40px;
 }
 
-.fontp4 {
+.menubox4 {
+  padding: 49% 11%;
+  background: #fdfffd;
+  overflow: hidden;
+}
+
+.menubox4:hover {
+  opacity: 0.8;
+}
+
+.menubox4 .titre4:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.menubox4 .titre4 .fontMenu4 {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 29px;
+}
+
+.menubox4 .titre4 .fontp4 {
   font-family: "Kalam", sans-serif;
   font-size: 40px;
 }
@@ -150,6 +249,43 @@ i {
   width: fit-content;
   border-radius: 10px;
   padding: 1% 9%;
+}
+
+.fa-circle {
+  font-size: 35%;
+}
+
+#circle1 {
+  -webkit-animation-name: ellipse;
+          animation-name: ellipse;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+#circle2 {
+  -webkit-animation-name: ellipse;
+          animation-name: ellipse;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#circle3 {
+  -webkit-animation-name: ellipse;
+          animation-name: ellipse;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 /*pied de page*/
@@ -230,49 +366,73 @@ a:visited {
     font-size: 15px;
   }
   .propositions_menus {
-    margin: 9% 3%;
+    margin: 6% 3%;
   }
   .menus {
-    min-width: 250px;
-    height: 383px;
+    min-width: 256px;
   }
-  .titre1 {
-    padding: 36% 11%;
+  .menubox1 {
+    padding: 38% 11%;
   }
-  .titre2 {
-    padding: 49% 4%;
+  .menubox1 .titre1:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
-  .titre3 {
-    padding: 44% 4%;
+  .menubox1 .titre1 i {
+    font-size: 2.5em;
   }
-  .titre4 {
-    padding: 43% 11%;
+  .menubox1 .titre1 .fontMenu1 {
+    font-size: 24px;
   }
-  .fontMenu2 {
-    font-size: 20px;
-  }
-  .fontMenu3 {
+  .menubox1 .titre1 .fontp1 {
     font-size: 28px;
   }
-  .fontMenu4 {
-    font-size: 27px;
+  .menubox2 {
+    padding: 49% 4%;
   }
-  .fontp1 {
-    font-size: 30px;
+  .menubox2 .titre2:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
-  .fontp2 {
-    font-size: 30px;
+  .menubox2 .titre2 .fontMenu2 {
+    font-size: 18px;
   }
-  .fontp3 {
-    font-size: 30px;
+  .menubox2 .titre2 .fontp2 {
+    font-size: 28px;
   }
-  .fontp4 {
-    font-size: 30px;
+  .menubox3 {
+    padding: 44% 4%;
+  }
+  .menubox3 .titre3:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .menubox3 .titre3 .fontMenu3 {
+    font-size: 24px;
+  }
+  .menubox3 .titre3 .fontp3 {
+    font-size: 28px;
+  }
+  .menubox4 {
+    padding: 43% 11%;
+  }
+  .menubox4 .titre4:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .menubox4 .titre4 .fontMenu4 {
+    font-size: 24px;
+  }
+  .menubox4 .titre4 .fontp4 {
+    font-size: 28px;
   }
   .prochainement {
     font-size: 25px;
     margin: 30px auto 100px auto;
     padding: 5px 55px;
+  }
+  .fa-circle {
+    font-size: 25%;
   }
 }
 
@@ -341,22 +501,22 @@ a:visited {
     margin: 6% 2%;
     max-width: 60%;
   }
-  .titre1 {
+  .menubox1 {
     padding: 36% 0%;
   }
-  .titre2 {
+  .menubox2 {
     padding: 49% 0%;
   }
-  .titre3 {
+  .menubox3 {
     padding: 44% 0%;
   }
-  .titre4 {
+  .menubox4 {
     padding: 43% 0%;
   }
   .prochainement {
     font-size: 20px;
     margin: 30px auto 100px auto;
-    padding: 5px 48px;
+    padding: 5px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
