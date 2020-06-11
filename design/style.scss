@@ -56,9 +56,9 @@
     .titre1
     {
         @include zoomTitle;
-        i
+        a
         {
-            font-size: 3em;
+            @include notemusic;
         }
         .fontMenu1
         {

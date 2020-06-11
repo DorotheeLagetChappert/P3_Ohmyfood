@@ -9,8 +9,44 @@ $backgroundMenu1:rgb(252, 223, 218);
 $backgroundMenu2: rgb(254,245,253);
 $backgroundMenu3:rgb(249, 249, 249);
 $backgroundMenu4:rgb(253, 255, 253);
+$colornote1:rgb(240, 78, 95);
+$colornote2:rgb(246, 145, 106);
+/*Couleurs menus*/
 $colorMenu1 : rgb(60, 18, 24);
-/*Animations*/
+$colorMenu2_1: rgb(198, 116, 18);
+$colorMenu2_2: rgb(165, 103, 153);
+$colorMenu2_3: rgb(110, 76, 204);
+$colorMenu3_1: rgb(2, 40, 221);
+$colorMenu3_2: rgb(6, 112, 243);
+$colorMenu3_3: rgb(34, 157, 249);
+$colorMenu4_1: rgb(65, 150, 60);
+$colorMenu4_2: rgb(190, 255, 127);
+/*Dégradés*/
+@mixin notemusic 
+{
+    .icon
+    {
+        background-color: $backgroundMenu1;
+        border: 1px solid $backgroundMenu1;
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 18px;
+        transition: all .2s;
+    }
+    .fa-itunes-note
+    {
+        font-size: 50px;
+        color: $colornote1;
+        display: block;
+        background: -webkit-linear-gradient($colornote1, $colornote2);
+        -webkit-text-fill-color: transparent;
+    }
+}
+/*Animation zoom titre avec effet fondu*/
 @mixin zoomTitle 
 {
     &:hover
@@ -33,6 +69,7 @@ $colorMenu1 : rgb(60, 18, 24);
             transform: scale(1.2);
         }
 }
+/*Animation points de suspensions*/
 @mixin ellipseAnim 
 {
     animation-name: ellipse;
@@ -47,6 +84,8 @@ $colorMenu1 : rgb(60, 18, 24);
     80% {transform: translateY(6.4px);}
     90% {transform: translateY(-6.4px);}
 }
+/*Animation effet wiggle*/
+/*Animation soulignement*/
 /*en-tête*/
 @mixin header 
 {
@@ -77,7 +116,6 @@ $colorMenu1 : rgb(60, 18, 24);
     }
     h3
     {
-        font-size: 28px;
         text-align: center;
     }
     .blocmenus
@@ -88,9 +126,9 @@ $colorMenu1 : rgb(60, 18, 24);
         box-shadow: 0px 0px 10px 4px $Ombre;
         -moz-box-shadow: 0px 0px 10px 4px $Ombre;
         -webkit-box-shadow: 0px 0px 10px 4px $Ombre;
-            .choix
+        .choix
         {
-            margin-bottom: 10%;
+            margin-bottom: 6%;
         }
     }
     table
@@ -144,17 +182,16 @@ $colorMenu1 : rgb(60, 18, 24);
     .contact
     {
         margin: 8px 20px;
-    }
+    }  
     a
     {
         text-decoration: none;
         color: inherit;
-        
         &:visited
         {
             color: inherit;
         }
-    }   
+    } 
 }
 /*responsive 1024*/
 @mixin responsive_tablette 

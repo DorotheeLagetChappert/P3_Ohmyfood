@@ -11,6 +11,27 @@ body
 .blocmenus
 {
     background: $backgroundMenu2;
+    h3
+    {
+        font-family: "Croissant One", sans-serif;
+        font-size: 35px;
+    }
+}
+caption
+{
+    font-weight: bold;
+}
+.entrance2
+{
+    color: $colorMenu2_1;
+}
+.maincourse2
+{
+    color: $colorMenu2_2;
+}
+.dessert2
+{
+    color: $colorMenu2_3;
 }
 /*pied de page*/
 @include footer;

@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*Couleurs*/
-/*Animations*/
+/*Couleurs menus*/
+/*Dégradés*/
+/*Animation zoom titre avec effet fondu*/
+/*Animation points de suspensions*/
 @-webkit-keyframes ellipse {
   0%, 100% {
     -webkit-transform: translateY(0);
@@ -46,6 +49,8 @@
   }
 }
 
+/*Animation effet wiggle*/
+/*Animation soulignement*/
 /*en-tête*/
 /*main*/
 /*pied de page*/

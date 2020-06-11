@@ -1,63 +1,56 @@
 @charset "UTF-8";
 /*Couleurs*/
-/*Animations*/
+/*Couleurs menus*/
+/*Dégradés*/
+/*Animation zoom titre avec effet fondu*/
+/*Animation points de suspensions*/
 @-webkit-keyframes ellipse {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70% {
+  10%, 30%, 50%, 70% {
     -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+            transform: translateY(-8px);
   }
-  20%,
-  40%,
-  60% {
+  20%, 40%, 60% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
+            transform: translateY(8px);
   }
   80% {
     -webkit-transform: translateY(6.4px);
-    transform: translateY(6.4px);
+            transform: translateY(6.4px);
   }
   90% {
     -webkit-transform: translateY(-6.4px);
-    transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
   }
 }
 @keyframes ellipse {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70% {
+  10%, 30%, 50%, 70% {
     -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+            transform: translateY(-8px);
   }
-  20%,
-  40%,
-  60% {
+  20%, 40%, 60% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
+            transform: translateY(8px);
   }
   80% {
     -webkit-transform: translateY(6.4px);
-    transform: translateY(6.4px);
+            transform: translateY(6.4px);
   }
   90% {
     -webkit-transform: translateY(-6.4px);
-    transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
   }
 }
 
+/*Animation effet wiggle*/
+/*Animation soulignement*/
 /*en-tête*/
 /*main*/
 /*pied de page*/
@@ -85,7 +78,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -133,6 +126,113 @@ h4 {
 .blocmenus .titre {
   font-size: 28px;
   text-align: center;
+  color: #3c1218;
+  font-family: Devonshire, sans-serif;
+}
+
+.blocmenus .titre .icon {
+  background-color: #fcdfda;
+  border: 1px solid #fcdfda;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 18px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.blocmenus .titre .fa-itunes-note {
+  font-size: 50px;
+  color: #f04e5f;
+  display: block;
+  background: -webkit-linear-gradient(#f04e5f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blocmenus .titre .icon {
+  margin-top: 8%;
+}
+
+.blocmenus .titre .icon .fa-itunes-note {
+  font-size: 85px;
+}
+
+.blocmenus .titre h3 {
+  margin: 0%;
+  margin-bottom: 6%;
+}
+
+.blocmenus caption {
+  color: #3c1218;
+  font-weight: bold;
+  font-family: "Kalam", sans-serif;
+}
+
+.blocmenus tr td {
+  color: #3c1218;
+  font-family: "Kalam", sans-serif;
+}
+
+.blocmenus .prix {
+  font-weight: bold;
+}
+
+.blocmenus ul {
+  display: -webkit-box;
+  list-style-type: none;
+  -webkit-box-align: baseline;
+  margin: 0 35%;
+  -webkit-padding-start: 0%;
+          padding-inline-start: 0%;
+}
+
+.blocmenus ul li {
+  margin: 0 2%;
+}
+
+.blocmenus ul li .icon {
+  background-color: #fcdfda;
+  border: 1px solid #fcdfda;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 18px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.blocmenus ul li .fa-itunes-note {
+  font-size: 50px;
+  color: #f04e5f;
+  display: block;
+  background: -webkit-linear-gradient(#f04e5f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blocmenus ul li h4 {
+  color: #3c1218;
+  font-size: 40px;
+  font-family: Devonshire, sans-serif;
 }
 
 /*pied de page*/

@@ -15,6 +15,59 @@ body
     {
         font-size: 28px;
         text-align: center;
+        color: $colorMenu1;
+        @include notemusic;
+        font-family: Devonshire, sans-serif;
+        .icon
+        {
+            margin-top: 8%;
+            .fa-itunes-note
+            {
+                font-size: 85px;
+            }
+        }
+        h3
+        {
+            margin: 0%;
+            margin-bottom: 6%;
+        }
+    }
+    caption
+    {
+        color: $colorMenu1;  
+        font-weight: bold;
+        font-family: "Kalam", sans-serif;
+    }
+    tr
+    {
+        td
+        {
+            color: $colorMenu1;
+            font-family: "Kalam", sans-serif;
+        }
+    }
+    .prix
+        {
+            font-weight: bold;
+        }
+    ul
+    {
+        display: -webkit-box;
+        list-style-type: none;
+        -webkit-box-align: baseline;
+        margin: 0 35%;
+        padding-inline-start: 0%;
+        li
+        {
+            margin: 0 2%;
+            @include notemusic;
+            h4
+            {
+                color: $colorMenu1;
+                font-size: 40px;
+                font-family: Devonshire, sans-serif;
+            }
+        }
     }
 }
 /*pied de page*/

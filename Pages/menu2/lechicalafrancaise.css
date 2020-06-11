@@ -1,63 +1,56 @@
 @charset "UTF-8";
 /*Couleurs*/
-/*Animations*/
+/*Couleurs menus*/
+/*Dégradés*/
+/*Animation zoom titre avec effet fondu*/
+/*Animation points de suspensions*/
 @-webkit-keyframes ellipse {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70% {
+  10%, 30%, 50%, 70% {
     -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+            transform: translateY(-8px);
   }
-  20%,
-  40%,
-  60% {
+  20%, 40%, 60% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
+            transform: translateY(8px);
   }
   80% {
     -webkit-transform: translateY(6.4px);
-    transform: translateY(6.4px);
+            transform: translateY(6.4px);
   }
   90% {
     -webkit-transform: translateY(-6.4px);
-    transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
   }
 }
 @keyframes ellipse {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70% {
+  10%, 30%, 50%, 70% {
     -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
+            transform: translateY(-8px);
   }
-  20%,
-  40%,
-  60% {
+  20%, 40%, 60% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
+            transform: translateY(8px);
   }
   80% {
     -webkit-transform: translateY(6.4px);
-    transform: translateY(6.4px);
+            transform: translateY(6.4px);
   }
   90% {
     -webkit-transform: translateY(-6.4px);
-    transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
   }
 }
 
+/*Animation effet wiggle*/
+/*Animation soulignement*/
 /*en-tête*/
 /*main*/
 /*pied de page*/
@@ -85,7 +78,6 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
   text-align: center;
 }
 
@@ -99,7 +91,7 @@ h3 {
 }
 
 .blocmenus .choix {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 table {
@@ -128,6 +120,27 @@ h4 {
 
 .blocmenus {
   background: #fef5fd;
+}
+
+.blocmenus h3 {
+  font-family: "Croissant One", sans-serif;
+  font-size: 35px;
+}
+
+caption {
+  font-weight: bold;
+}
+
+.entrance2 {
+  color: #c67412;
+}
+
+.maincourse2 {
+  color: #a56799;
+}
+
+.dessert2 {
+  color: #6e4ccc;
 }
 
 /*pied de page*/
