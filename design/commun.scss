@@ -26,7 +26,6 @@ $colorMenu4_2: rgb(190, 255, 127);
 {
     .icon
     {
-        background-color: $backgroundMenu1;
         border: 1px solid $backgroundMenu1;
         text-align: center;
         width: 10px;
@@ -42,8 +41,8 @@ $colorMenu4_2: rgb(190, 255, 127);
         font-size: 50px;
         color: $colornote1;
         display: block;
-        background: -webkit-linear-gradient(left, $colornote1, $colornote2) no-repeat;
-        background-clip: text;
+        background-image: -webkit-linear-gradient(left, $colornote1, $colornote2);
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
@@ -86,6 +85,44 @@ $colorMenu4_2: rgb(190, 255, 127);
     90% {transform: translateY(-6.4px);}
 }
 /*Animation effet wiggle*/
+@mixin shakeAnim 
+{
+    animation: shake 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@keyframes shake 
+{
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
 /*Animation soulignement*/
 /*en-tête*/
 @mixin header 
@@ -179,10 +216,18 @@ $colorMenu4_2: rgb(190, 255, 127);
     .legal
     {
         margin: 8px 20px;
+        &:hover
+        {
+            @include shakeAnim;
+        }
     }
     .contact
     {
         margin: 8px 20px;
+        &:hover
+        {
+            @include shakeAnim;
+        }
     }  
     a
     {

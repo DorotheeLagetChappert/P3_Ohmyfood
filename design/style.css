@@ -4,52 +4,52 @@
 /*Dégradés*/
 /*Animation zoom titre avec effet fondu*/
 /*Animation points de suspensions*/
-@-webkit-keyframes ellipse {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-  }
-  20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
-  }
-  80% {
-    -webkit-transform: translateY(6.4px);
-            transform: translateY(6.4px);
-  }
-  90% {
-    -webkit-transform: translateY(-6.4px);
-            transform: translateY(-6.4px);
-  }
-}
 @keyframes ellipse {
   0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    transform: translateY(-8px);
   }
   20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
   }
   80% {
-    -webkit-transform: translateY(6.4px);
-            transform: translateY(6.4px);
+    transform: translateY(6.4px);
   }
   90% {
-    -webkit-transform: translateY(-6.4px);
-            transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
   }
 }
-
 /*Animation effet wiggle*/
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
 /*Animation soulignement*/
 /*en-tête*/
 /*main*/
@@ -73,8 +73,6 @@ h1 {
 
 .search_bar {
   background-color: #ededed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-width: 100%;
 }
@@ -101,18 +99,12 @@ h1 {
 
 /*corps de la page*/
 .propositions_menus {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   margin: 4% 3%;
 }
 
@@ -129,51 +121,36 @@ h1 {
   background: #fcdfda;
   overflow: hidden;
 }
-
 .menubox1:hover {
   opacity: 0.8;
 }
-
 .menubox1 .titre1:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
-
 .menubox1 .titre1 a .icon {
-  background-color: #fcdfda;
   border: 1px solid #fcdfda;
   text-align: center;
   width: 10px;
   height: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 18px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
 .menubox1 .titre1 a .fa-itunes-note {
   font-size: 50px;
   color: #f04e5f;
   display: block;
-  background: -webkit-linear-gradient(left, #f04e5f, #f6916a) no-repeat;
-  background-clip: text;
+  background-image: -webkit-linear-gradient(left, #f04e5f, #f6916a);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .menubox1 .titre1 .fontMenu1 {
   font-family: "Devonshire", sans-serif;
   font-size: 28px;
   color: #3c1218;
 }
-
 .menubox1 .titre1 .fontp1 {
   font-family: "Averia Libre", sans-serif;
   font-size: 39px;
@@ -185,16 +162,12 @@ h1 {
   background: #fef5fd;
   overflow: hidden;
 }
-
 .menubox2:hover {
   opacity: 0.8;
 }
-
 .menubox2 .titre2:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
-
 .menubox2 .titre2 .fontMenu2 {
   font-family: "Croissant One", sans-serif;
   font-size: 23px;
@@ -204,7 +177,6 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .menubox2 .titre2 .fontp2 {
   font-family: "Judson", sans-serif;
   font-size: 40px;
@@ -215,21 +187,16 @@ h1 {
   background: #f9f9f9;
   overflow: hidden;
 }
-
 .menubox3:hover {
   opacity: 0.8;
 }
-
 .menubox3 .titre3:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
-
 .menubox3 .titre3 .fontMenu3 {
   font-family: "Dancing Script", sans-serif;
   font-size: 32px;
 }
-
 .menubox3 .titre3 .fontp3 {
   font-family: "Kalam", sans-serif;
   font-size: 40px;
@@ -240,21 +207,16 @@ h1 {
   background: #fdfffd;
   overflow: hidden;
 }
-
 .menubox4:hover {
   opacity: 0.8;
 }
-
 .menubox4 .titre4:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
-
 .menubox4 .titre4 .fontMenu4 {
   font-family: "Kaushan Script", sans-serif;
   font-size: 29px;
 }
-
 .menubox4 .titre4 .fontp4 {
   font-family: "Kalam", sans-serif;
   font-size: 40px;
@@ -267,8 +229,6 @@ h1 {
   background-color: #569c87;
   color: #f0c64f;
   margin: 30px auto 150px auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
   padding: 1% 9%;
@@ -279,36 +239,24 @@ h1 {
 }
 
 #circle1 {
-  -webkit-animation-name: ellipse;
-          animation-name: ellipse;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-name: ellipse;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 #circle2 {
-  -webkit-animation-name: ellipse;
-          animation-name: ellipse;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-name: ellipse;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.1s;
 }
 
 #circle3 {
-  -webkit-animation-name: ellipse;
-          animation-name: ellipse;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-name: ellipse;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
 }
 
 /*pied de page*/
@@ -316,12 +264,8 @@ h1 {
   background-color: #569c87;
   height: 50px;
   color: #f0c64f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 30px;
   font-weight: bold;
   position: fixed;
@@ -332,16 +276,21 @@ h1 {
 .legal {
   margin: 8px 20px;
 }
+.legal:hover {
+  animation: shake 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 
 .contact {
   margin: 8px 20px;
+}
+.contact:hover {
+  animation: shake 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
 a:visited {
   color: inherit;
 }
@@ -351,10 +300,12 @@ a:visited {
   h1 {
     font-size: 75px;
   }
+
   .blocmenus {
     min-width: 90%;
     max-width: 78%;
   }
+
   table {
     max-width: 100%;
     border-spacing: 6px;
@@ -371,16 +322,15 @@ a:visited {
     font-size: 20px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .legal {
     font-size: 25px;
   }
+
   .contact {
     font-size: 25px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   #site-search {
     height: 36px;
@@ -388,18 +338,20 @@ a:visited {
     max-width: 95%;
     font-size: 15px;
   }
+
   .propositions_menus {
     margin: 6% 3%;
   }
+
   .menus {
     min-width: 256px;
   }
+
   .menubox1 {
     padding: 38% 11%;
   }
   .menubox1 .titre1:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   .menubox1 .titre1 i {
     font-size: 2.5em;
@@ -410,12 +362,12 @@ a:visited {
   .menubox1 .titre1 .fontp1 {
     font-size: 28px;
   }
+
   .menubox2 {
     padding: 49% 4%;
   }
   .menubox2 .titre2:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   .menubox2 .titre2 .fontMenu2 {
     font-size: 18px;
@@ -423,12 +375,12 @@ a:visited {
   .menubox2 .titre2 .fontp2 {
     font-size: 28px;
   }
+
   .menubox3 {
     padding: 44% 4%;
   }
   .menubox3 .titre3:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   .menubox3 .titre3 .fontMenu3 {
     font-size: 24px;
@@ -436,12 +388,12 @@ a:visited {
   .menubox3 .titre3 .fontp3 {
     font-size: 28px;
   }
+
   .menubox4 {
     padding: 43% 11%;
   }
   .menubox4 .titre4:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   .menubox4 .titre4 .fontMenu4 {
     font-size: 24px;
@@ -449,30 +401,35 @@ a:visited {
   .menubox4 .titre4 .fontp4 {
     font-size: 28px;
   }
+
   .prochainement {
     font-size: 25px;
     margin: 30px auto 100px auto;
     padding: 5px 55px;
   }
+
   .fa-circle {
     font-size: 25%;
   }
 }
-
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
   h1 {
     font-size: 60px;
   }
+
   main {
     margin: 0%;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 20px;
   }
+
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
@@ -480,6 +437,7 @@ a:visited {
   .blocmenus .titre {
     font-size: 20px;
   }
+
   table caption {
     font-size: 20px;
   }
@@ -492,54 +450,54 @@ a:visited {
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 625px) {
   .legal {
     font-size: 15px;
   }
+
   .contact {
     font-size: 15px;
   }
 }
-
 @media screen and (max-width: 625px) {
   #site-search {
     min-width: 89%;
   }
+
   .propositions_menus {
-    display: -ms-grid;
     display: grid;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     margin: 4% 8%;
   }
+
   .menus {
     margin: 6% 2%;
     max-width: 60%;
   }
+
   .menubox1 {
     padding: 36% 0%;
   }
+
   .menubox2 {
     padding: 49% 0%;
   }
+
   .menubox3 {
     padding: 44% 0%;
   }
+
   .menubox4 {
     padding: 43% 0%;
   }
+
   .prochainement {
     font-size: 20px;
     margin: 30px auto 100px auto;
     padding: 5px 30px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

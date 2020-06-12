@@ -11,6 +11,17 @@ body
 .blocmenus
 {
     background:$backgroundMenu3;
+    caption
+    {
+        font-family: "Kalam", sans-serif;
+    }
+    tr
+    {
+        td
+        {
+            font-family: "Kalam", sans-serif;
+        }
+    }
 }
 /*pied de page*/
 @include footer;
