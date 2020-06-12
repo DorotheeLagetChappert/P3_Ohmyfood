@@ -78,7 +78,6 @@ h2 {
 }
 
 h3 {
-  font-size: 50px;
   text-align: center;
 }
 
@@ -92,7 +91,7 @@ h3 {
 }
 
 .blocmenus .choix {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 table {
@@ -154,8 +153,8 @@ h4 {
   font-size: 50px;
   color: #f04e5f;
   display: block;
-  background: -webkit-linear-gradient(#f04e5f, #f6916a);
-  -webkit-background-clip: text;
+  background: -webkit-linear-gradient(left, #f04e5f, #f6916a) no-repeat;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -224,8 +223,8 @@ h4 {
   font-size: 50px;
   color: #f04e5f;
   display: block;
-  background: -webkit-linear-gradient(#f04e5f, #f6916a);
-  -webkit-background-clip: text;
+  background: -webkit-linear-gradient(left, #f04e5f, #f6916a) no-repeat;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

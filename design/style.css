@@ -163,8 +163,8 @@ h1 {
   font-size: 50px;
   color: #f04e5f;
   display: block;
-  background: -webkit-linear-gradient(#f04e5f, #f6916a);
-  -webkit-background-clip: text;
+  background: -webkit-linear-gradient(left, #f04e5f, #f6916a) no-repeat;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -198,6 +198,11 @@ h1 {
 .menubox2 .titre2 .fontMenu2 {
   font-family: "Croissant One", sans-serif;
   font-size: 23px;
+  background: -webkit-linear-gradient(top left, #c67412 0% 35%, #a56799 40% 70%, #6e4ccc 75% 100%) no-repeat;
+  color: #c67412;
+  display: block;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menubox2 .titre2 .fontp2 {
