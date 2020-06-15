@@ -30,6 +30,8 @@ body
         {
             margin: 0%;
             margin-bottom: 6%;
+            color: $colorMenu1;
+            font-size: 60px;
         }
     }
     caption
@@ -47,25 +49,32 @@ body
         }
     }
     .prix
-        {
-            font-weight: bold;
-        }
-    ul
     {
-        display: -webkit-box;
+        font-weight: bold;
+    }
+    .titleBottom
+    {
+        text-align: center;
+        ul
+        {
+        display: -webkit-inline-box;
         list-style-type: none;
         -webkit-box-align: baseline;
-        margin: 0 35%;
         padding-inline-start: 0%;
-        li
-        {
-            margin: 0 2%;
-            @include notemusic;
-            h4
+            li
             {
+                margin: 0 2%;
+                @include notemusic;
+                .fa-itunes-note
+                {
+                    font-size: 38px;
+                }
+                h4
+                {
                 color: $colorMenu1;
                 font-size: 40px;
                 font-family: "Devonshire", sans-serif;
+                }
             }
         }
     }
@@ -80,7 +89,91 @@ body
 }
 /*Responsive tablette 1024px*/
 @include responsive_tablette;
+@media screen and (max-width:1024px)
+{
+    .blocmenus
+    {
+        margin-bottom: 80px;
+        .titre
+        {
+            .icon
+            {
+                .fa-itunes-note
+                {
+                    font-size: 60px;
+                }
+            }
+            h3
+                {
+                    font-size: 40px;
+                }
+        }
+        table
+        {
+            max-width: 30%;
+        }
+        .titleBottom
+        {
+            ul
+            {
+                li
+                {
+                    .fa-itunes-note
+                    {
+                        font-size: 30px;
+                    }
+                    h4
+                    {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
 @include footer_tablette;
 /*Responsive mobile 625px*/
+@media screen and (max-width:1024px)
+{
+    .blocmenus
+    {
+        .titre
+        {
+            .fa-itunes-note
+            {
+                font-size: 40px;
+            }
+            h3
+            {
+                font-size: 36px;
+            }
+        }
+        .titleBottom
+        {
+            ul
+            {
+                li
+                {
+                    .fa-itunes-note
+                    {
+                        font-size: 20px;
+                    }
+                    h4
+                    {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        table
+        {
+            max-width: 0px;
+            .prix
+            {
+                max-width: 13%;
+            }
+        }
+    }
+}
 @include responsive_mobile;
 @include footer_mobile;

@@ -151,6 +151,8 @@ h4 {
 .blocmenus .titre h3 {
   margin: 0%;
   margin-bottom: 6%;
+  color: #3c1218;
+  font-size: 60px;
 }
 .blocmenus caption {
   color: #3c1218;
@@ -164,17 +166,19 @@ h4 {
 .blocmenus .prix {
   font-weight: bold;
 }
-.blocmenus ul {
-  display: -webkit-box;
+.blocmenus .titleBottom {
+  text-align: center;
+}
+.blocmenus .titleBottom ul {
+  display: -webkit-inline-box;
   list-style-type: none;
   -webkit-box-align: baseline;
-  margin: 0 35%;
   padding-inline-start: 0%;
 }
-.blocmenus ul li {
+.blocmenus .titleBottom ul li {
   margin: 0 2%;
 }
-.blocmenus ul li .icon {
+.blocmenus .titleBottom ul li .icon {
   border: 1px solid #fcdfda;
   text-align: center;
   width: 10px;
@@ -185,14 +189,17 @@ h4 {
   margin: 18px;
   transition: all 0.2s;
 }
-.blocmenus ul li .fa-itunes-note {
+.blocmenus .titleBottom ul li .fa-itunes-note {
   color: #f04e5f;
   display: block;
   background-image: -webkit-linear-gradient(left, #f04e5f, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.blocmenus ul li h4 {
+.blocmenus .titleBottom ul li .fa-itunes-note {
+  font-size: 38px;
+}
+.blocmenus .titleBottom ul li h4 {
   color: #3c1218;
   font-size: 40px;
   font-family: "Devonshire", sans-serif;
@@ -268,6 +275,26 @@ a:visited {
   }
 }
 @media screen and (max-width: 1024px) {
+  .blocmenus {
+    margin-bottom: 80px;
+  }
+  .blocmenus .titre .icon .fa-itunes-note {
+    font-size: 60px;
+  }
+  .blocmenus .titre h3 {
+    font-size: 40px;
+  }
+  .blocmenus table {
+    max-width: 30%;
+  }
+  .blocmenus .titleBottom ul li .fa-itunes-note {
+    font-size: 30px;
+  }
+  .blocmenus .titleBottom ul li h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .legal {
     font-size: 25px;
   }
@@ -277,6 +304,26 @@ a:visited {
   }
 }
 /*Responsive mobile 625px*/
+@media screen and (max-width: 1024px) {
+  .blocmenus .titre .fa-itunes-note {
+    font-size: 40px;
+  }
+  .blocmenus .titre h3 {
+    font-size: 36px;
+  }
+  .blocmenus .titleBottom ul li .fa-itunes-note {
+    font-size: 20px;
+  }
+  .blocmenus .titleBottom ul li h4 {
+    font-size: 20px;
+  }
+  .blocmenus table {
+    max-width: 0px;
+  }
+  .blocmenus table .prix {
+    max-width: 13%;
+  }
+}
 @media screen and (max-width: 625px) {
   h1 {
     font-size: 60px;
@@ -291,18 +338,12 @@ a:visited {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
-  }
-  .blocmenus .titre .fa-itunes-note {
-    font-size: 45px;
-  }
-  .blocmenus .titre h4 {
-    font-size: 30px;
   }
 
   table caption {
@@ -315,16 +356,6 @@ a:visited {
   table tr .prix {
     width: 10%;
     font-size: 16px;
-  }
-
-  ul {
-    margin: 0 25%;
-  }
-  ul li .fa-itunes-note {
-    font-size: 30px;
-  }
-  ul li h4 {
-    font-size: 20px;
   }
 }
 @media screen and (max-width: 625px) {
