@@ -11,6 +11,18 @@ body
 .blocmenus
 {
     background:$backgroundMenu4;
+    h3
+    {
+        @include paletteColor;
+        font-size: 35px;
+        font-family: "Kaushan Script", sans-serif;
+    }
+    h4
+    {
+        @include paletteColor;
+        font-size: 30px;
+        font-family: "Kaushan Script", sans-serif;
+    }
     caption
     {
         font-family: "Kalam", sans-serif;

@@ -139,12 +139,14 @@ h1 {
   transition: all 0.2s;
 }
 .menubox1 .titre1 a .fa-itunes-note {
-  font-size: 50px;
   color: #f04e5f;
   display: block;
   background-image: -webkit-linear-gradient(left, #f04e5f, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menubox1 .titre1 a .fa-itunes-note {
+  font-size: 50px;
 }
 .menubox1 .titre1 .fontMenu1 {
   font-family: "Devonshire", sans-serif;
@@ -171,15 +173,16 @@ h1 {
 .menubox2 .titre2 .fontMenu2 {
   font-family: "Croissant One", sans-serif;
   font-size: 23px;
-  background: -webkit-linear-gradient(top left, #c67412 0% 35%, #a56799 40% 70%, #6e4ccc 75% 100%) no-repeat;
   color: #c67412;
   display: block;
-  background-clip: text;
+  background-image: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menubox2 .titre2 .fontp2 {
   font-family: "Judson", sans-serif;
   font-size: 40px;
+  color: #c67412;
 }
 
 .menubox3 {
@@ -196,10 +199,16 @@ h1 {
 .menubox3 .titre3 .fontMenu3 {
   font-family: "Dancing Script", sans-serif;
   font-size: 32px;
+  color: #0228dd;
+  display: block;
+  background-image: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menubox3 .titre3 .fontp3 {
   font-family: "Kalam", sans-serif;
   font-size: 40px;
+  color: #229df9;
 }
 
 .menubox4 {
@@ -216,10 +225,16 @@ h1 {
 .menubox4 .titre4 .fontMenu4 {
   font-family: "Kaushan Script", sans-serif;
   font-size: 29px;
+  color: #41963c;
+  display: block;
+  background-image: -webkit-linear-gradient(left, #41963c, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menubox4 .titre4 .fontp4 {
   font-family: "Kalam", sans-serif;
   font-size: 40px;
+  color: #41963c;
 }
 
 .prochainement {
@@ -434,8 +449,11 @@ a:visited {
     width: 100%;
     margin: 1% auto 20% auto;
   }
-  .blocmenus .titre {
-    font-size: 20px;
+  .blocmenus .titre .fa-itunes-note {
+    font-size: 45px;
+  }
+  .blocmenus .titre h4 {
+    font-size: 30px;
   }
 
   table caption {
@@ -448,6 +466,16 @@ a:visited {
   table tr .prix {
     width: 10%;
     font-size: 16px;
+  }
+
+  ul {
+    margin: 0 25%;
+  }
+  ul li .fa-itunes-note {
+    font-size: 30px;
+  }
+  ul li h4 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 625px) {

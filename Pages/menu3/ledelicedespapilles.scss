@@ -11,6 +11,18 @@ body
 .blocmenus
 {
     background:$backgroundMenu3;
+    h3
+    {
+        @include déliceColor;
+        font-size: 35px;
+        font-family: "Dancing Script", sans-serif;
+    }
+    h4
+    {
+        @include déliceColor;
+        font-size: 30px;
+        font-family: "Dancing Script", sans-serif;
+    }
     caption
     {
         font-family: "Kalam", sans-serif;

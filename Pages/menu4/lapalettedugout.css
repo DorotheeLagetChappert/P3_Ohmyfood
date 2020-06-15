@@ -4,52 +4,52 @@
 /*Dégradés*/
 /*Animation zoom titre avec effet fondu*/
 /*Animation points de suspensions*/
-@-webkit-keyframes ellipse {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-  }
-  20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
-  }
-  80% {
-    -webkit-transform: translateY(6.4px);
-            transform: translateY(6.4px);
-  }
-  90% {
-    -webkit-transform: translateY(-6.4px);
-            transform: translateY(-6.4px);
-  }
-}
 @keyframes ellipse {
   0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    transform: translateY(-8px);
   }
   20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
   }
   80% {
-    -webkit-transform: translateY(6.4px);
-            transform: translateY(6.4px);
+    transform: translateY(6.4px);
   }
   90% {
-    -webkit-transform: translateY(-6.4px);
-            transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
   }
 }
-
 /*Animation effet wiggle*/
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
 /*Animation soulignement*/
 /*en-tête*/
 /*main*/
@@ -89,7 +89,6 @@ h3 {
   -moz-box-shadow: 0px 0px 10px 4px #e7e7e7;
   -webkit-box-shadow: 0px 0px 10px 4px #e7e7e7;
 }
-
 .blocmenus .choix {
   margin-bottom: 6%;
 }
@@ -101,12 +100,10 @@ table {
   max-width: 38%;
   min-width: 90%;
 }
-
 table caption {
   font-size: 25px;
   padding: 2% 0;
 }
-
 table tr td {
   font-size: 20px;
   padding: 2% 0;
@@ -121,11 +118,27 @@ h4 {
 .blocmenus {
   background: #fdfffd;
 }
-
+.blocmenus h3 {
+  color: #41963c;
+  display: block;
+  background-image: -webkit-linear-gradient(left, #41963c, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-family: "Kaushan Script", sans-serif;
+}
+.blocmenus h4 {
+  color: #41963c;
+  display: block;
+  background-image: -webkit-linear-gradient(left, #41963c, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-family: "Kaushan Script", sans-serif;
+}
 .blocmenus caption {
   font-family: "Kalam", sans-serif;
 }
-
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;
 }
@@ -135,12 +148,8 @@ h4 {
   background-color: #569c87;
   height: 50px;
   color: #f0c64f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 30px;
   font-weight: bold;
   position: fixed;
@@ -151,16 +160,21 @@ h4 {
 .legal {
   margin: 8px 20px;
 }
+.legal:hover {
+  animation: shake 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 
 .contact {
   margin: 8px 20px;
+}
+.contact:hover {
+  animation: shake 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
 a:visited {
   color: inherit;
 }
@@ -170,10 +184,12 @@ a:visited {
   h1 {
     font-size: 75px;
   }
+
   .blocmenus {
     min-width: 90%;
     max-width: 78%;
   }
+
   table {
     max-width: 100%;
     border-spacing: 6px;
@@ -190,37 +206,44 @@ a:visited {
     font-size: 20px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .legal {
     font-size: 25px;
   }
+
   .contact {
     font-size: 25px;
   }
 }
-
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
   h1 {
     font-size: 60px;
   }
+
   main {
     margin: 0%;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 20px;
   }
+
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
   }
-  .blocmenus .titre {
-    font-size: 20px;
+  .blocmenus .titre .fa-itunes-note {
+    font-size: 45px;
   }
+  .blocmenus .titre h4 {
+    font-size: 30px;
+  }
+
   table caption {
     font-size: 20px;
   }
@@ -232,14 +255,25 @@ a:visited {
     width: 10%;
     font-size: 16px;
   }
-}
 
+  ul {
+    margin: 0 25%;
+  }
+  ul li .fa-itunes-note {
+    font-size: 30px;
+  }
+  ul li h4 {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 625px) {
   .legal {
     font-size: 15px;
   }
+
   .contact {
     font-size: 15px;
   }
 }
+
 /*# sourceMappingURL=lapalettedugout.css.map */

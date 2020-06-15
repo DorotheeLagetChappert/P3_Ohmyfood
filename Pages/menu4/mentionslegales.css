@@ -71,76 +71,47 @@ h1 {
   margin: 0px;
 }
 
-/*Main*/
+main {
+  margin-bottom: 15%;
+}
+
 h2 {
-  text-align: center;
   font-size: 40px;
-}
-
-h3 {
   text-align: center;
-}
-
-.blocmenus {
-  margin: 1% auto 8% auto;
-  min-width: 860px;
-  max-width: 684px;
-  box-shadow: 0px 0px 10px 4px #e7e7e7;
-  -moz-box-shadow: 0px 0px 10px 4px #e7e7e7;
-  -webkit-box-shadow: 0px 0px 10px 4px #e7e7e7;
-}
-.blocmenus .choix {
-  margin-bottom: 6%;
+  color: black;
+  padding: 28px 0px;
+  margin: 0px;
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   margin: auto;
   table-layout: fixed;
-  max-width: 38%;
-  min-width: 90%;
+  width: 90%;
 }
 table caption {
-  font-size: 25px;
-  padding: 2% 0;
+  padding: 28px 0px;
+  margin: 0px;
 }
-table tr td {
-  font-size: 20px;
-  padding: 2% 0;
+table tbody tr td {
+  border: 1px solid #569c87;
+  padding: 1% 5% 1% 2%;
 }
 
-h4 {
+.blocText {
+  margin: 3% 5%;
+  text-align: justify;
+  width: 90%;
+}
+.blocText h3 {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 7%;
+  color: black;
 }
-
-.blocmenus {
-  background: #f9f9f9;
-}
-.blocmenus h3 {
-  color: #0228dd;
-  display: block;
-  background-image: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 35px;
-  font-family: "Dancing Script", sans-serif;
-}
-.blocmenus h4 {
-  color: #0228dd;
-  display: block;
-  background-image: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 30px;
-  font-family: "Dancing Script", sans-serif;
-}
-.blocmenus caption {
-  font-family: "Kalam", sans-serif;
-}
-.blocmenus tr td {
-  font-family: "Kalam", sans-serif;
+.blocText p {
+  text-align: left;
+  font-size: 16px;
+  color: black;
 }
 
 /*pied de page*/
@@ -181,92 +152,37 @@ a:visited {
 
 /*Responsive tablette 1024px*/
 @media screen and (max-width: 1024px) {
+  .legal {
+    font-size: 25px;
+  }
+
+  .contact {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    height: 1900px;
+  }
+
+  main {
+    margin-bottom: 15%;
+  }
+
   h1 {
     font-size: 75px;
   }
 
-  .blocmenus {
-    min-width: 90%;
-    max-width: 78%;
+  h3 {
+    font-size: 18px;
   }
 
-  table {
-    max-width: 100%;
-    border-spacing: 6px;
-  }
-  table caption {
-    font-size: 24px;
-  }
-  table tr .plat {
-    width: 66%;
-    font-size: 20px;
-  }
-  table tr .prix {
-    width: 8%;
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .legal {
-    font-size: 25px;
-  }
-
-  .contact {
-    font-size: 25px;
+  td {
+    font-size: 16px;
   }
 }
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
-  h1 {
-    font-size: 60px;
-  }
-
-  main {
-    margin: 0%;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  .blocmenus {
-    width: 100%;
-    margin: 1% auto 20% auto;
-  }
-  .blocmenus .titre .fa-itunes-note {
-    font-size: 45px;
-  }
-  .blocmenus .titre h4 {
-    font-size: 30px;
-  }
-
-  table caption {
-    font-size: 20px;
-  }
-  table tr .plat {
-    width: 70%;
-    font-size: 16px;
-  }
-  table tr .prix {
-    width: 10%;
-    font-size: 16px;
-  }
-
-  ul {
-    margin: 0 25%;
-  }
-  ul li .fa-itunes-note {
-    font-size: 30px;
-  }
-  ul li h4 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 625px) {
   .legal {
     font-size: 15px;
   }
@@ -275,5 +191,23 @@ a:visited {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 625px) {
+  body {
+    min-width: 655px;
+    height: 2020px;
+  }
 
-/*# sourceMappingURL=ledelicedespapilles.css.map */
+  h1 {
+    font-size: 60px;
+  }
+
+  table {
+    min-width: 90%;
+  }
+
+  .blocText {
+    margin: 8% 5%;
+  }
+}
+
+/*# sourceMappingURL=mentionslegales.css.map */

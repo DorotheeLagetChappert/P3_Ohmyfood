@@ -11,34 +11,16 @@ body
 .blocmenus
 {
     background: $backgroundMenu2;
-    .titleChicColor
-    {
-        background-color: $backgroundMenu2;
-        border: 1px solid $backgroundMenu2;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all .2s;
-    }
     h3
     {
-        font-family: "Croissant One", sans-serif;
-        font-size: 35px;
-        background: -webkit-linear-gradient(top left, $colorMenu2_1 0% 35%, $colorMenu2_2 40% 70%, $colorMenu2_3 75% 100%) no-repeat;
-        color: $colorMenu2_1;
-        display: block;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+    font-family: "Croissant One", sans-serif;
+    font-size: 35px;
+    @include chicColor;
     }
     h4
     {
-        font-size: 30px;
-        background: -webkit-linear-gradient(top left, $colorMenu2_1 0% 35%, $colorMenu2_2 40% 70%, $colorMenu2_3 75% 100%) no-repeat;
-        color: $colorMenu2_1;
-        display: block;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    @include chicColor;
     }
 }
 caption

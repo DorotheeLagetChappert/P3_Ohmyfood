@@ -38,13 +38,36 @@ $colorMenu4_2: rgb(190, 255, 127);
     }
     .fa-itunes-note
     {
-        font-size: 50px;
         color: $colornote1;
         display: block;
         background-image: -webkit-linear-gradient(left, $colornote1, $colornote2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+}
+@mixin chicColor 
+{
+    color: $colorMenu2_1;
+    display: block;
+    background-image: -webkit-linear-gradient(left, $colorMenu2_1, $colorMenu2_2, $colorMenu2_3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin déliceColor 
+{
+    color: $colorMenu3_1;
+    display: block;
+    background-image: -webkit-linear-gradient(left, $colorMenu3_1, $colorMenu3_2, $colorMenu3_3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin paletteColor 
+{
+    color: $colorMenu4_1;
+    display: block;
+    background-image: -webkit-linear-gradient(left, $colorMenu4_1, $colorMenu4_2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*Animation zoom titre avec effet fondu*/
 @mixin zoomTitle 
@@ -318,7 +341,14 @@ $colorMenu4_2: rgb(190, 255, 127);
             margin: 1% auto 20% auto;
             .titre
             {
-                font-size: 20px;
+                .fa-itunes-note
+                {
+                    font-size: 45px;
+                }
+                h4
+                {
+                    font-size: 30px;
+                }
             }
         }
         table
@@ -338,6 +368,21 @@ $colorMenu4_2: rgb(190, 255, 127);
                 {
                     width: 10%;
                     font-size: 16px;
+                }
+            }
+        }
+        ul
+        {
+            margin: 0 25%;
+            li
+            {
+                .fa-itunes-note
+                {
+                    font-size: 30px;
+                }
+                h4
+                {
+                    font-size: 20px;
                 }
             }
         }

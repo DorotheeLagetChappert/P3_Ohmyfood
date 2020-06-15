@@ -16,8 +16,8 @@ body
         font-size: 28px;
         text-align: center;
         color: $colorMenu1;
+        font-family: "Devonshire", sans-serif;
         @include notemusic;
-        font-family: Devonshire, sans-serif;
         .icon
         {
             margin-top: 8%;
@@ -65,7 +65,7 @@ body
             {
                 color: $colorMenu1;
                 font-size: 40px;
-                font-family: Devonshire, sans-serif;
+                font-family: "Devonshire", sans-serif;
             }
         }
     }

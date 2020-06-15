@@ -59,6 +59,10 @@
         a
         {
             @include notemusic;
+            .fa-itunes-note
+            {
+                font-size: 50px;
+            }
         }
         .fontMenu1
         {
@@ -86,16 +90,13 @@
         {
             font-family: "Croissant One", sans-serif;
             font-size: 23px;
-            background: -webkit-linear-gradient(top left, $colorMenu2_1 0% 35%, $colorMenu2_2 40% 70%, $colorMenu2_3 75% 100%) no-repeat;
-            color: $colorMenu2_1;
-            display: block;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include chicColor ;
         }
         .fontp2
         {
             font-family: "Judson", sans-serif;
             font-size: 40px;
+            color: $colorMenu2_1;
         }
     }
 }
@@ -111,11 +112,13 @@
         {
             font-family: "Dancing Script", sans-serif;
             font-size: 32px;
+            @include déliceColor;
         }
         .fontp3
         {
             font-family: "Kalam", sans-serif;
             font-size: 40px;
+            color: $colorMenu3_3;
         }
     }
 }
@@ -131,11 +134,13 @@
         {
             font-family: "Kaushan Script", sans-serif;
             font-size: 29px;
+            @include paletteColor;
         }
         .fontp4
         {
             font-family: "Kalam", sans-serif;
             font-size: 40px;
+            color: $colorMenu4_1;
         }
     }
 }

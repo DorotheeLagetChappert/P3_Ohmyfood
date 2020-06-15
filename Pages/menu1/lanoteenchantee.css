@@ -4,52 +4,52 @@
 /*Dégradés*/
 /*Animation zoom titre avec effet fondu*/
 /*Animation points de suspensions*/
-@-webkit-keyframes ellipse {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-  }
-  20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
-  }
-  80% {
-    -webkit-transform: translateY(6.4px);
-            transform: translateY(6.4px);
-  }
-  90% {
-    -webkit-transform: translateY(-6.4px);
-            transform: translateY(-6.4px);
-  }
-}
 @keyframes ellipse {
   0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    transform: translateY(-8px);
   }
   20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    transform: translateY(8px);
   }
   80% {
-    -webkit-transform: translateY(6.4px);
-            transform: translateY(6.4px);
+    transform: translateY(6.4px);
   }
   90% {
-    -webkit-transform: translateY(-6.4px);
-            transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
   }
 }
-
 /*Animation effet wiggle*/
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
 /*Animation soulignement*/
 /*en-tête*/
 /*main*/
@@ -89,7 +89,6 @@ h3 {
   -moz-box-shadow: 0px 0px 10px 4px #e7e7e7;
   -webkit-box-shadow: 0px 0px 10px 4px #e7e7e7;
 }
-
 .blocmenus .choix {
   margin-bottom: 6%;
 }
@@ -101,12 +100,10 @@ table {
   max-width: 38%;
   min-width: 90%;
 }
-
 table caption {
   font-size: 25px;
   padding: 2% 0;
 }
-
 table tr td {
   font-size: 20px;
   padding: 2% 0;
@@ -121,117 +118,84 @@ h4 {
 .blocmenus {
   background: #fcdfda;
 }
-
 .blocmenus .titre {
   font-size: 28px;
   text-align: center;
   color: #3c1218;
-  font-family: Devonshire, sans-serif;
+  font-family: "Devonshire", sans-serif;
 }
-
 .blocmenus .titre .icon {
-  background-color: #fcdfda;
   border: 1px solid #fcdfda;
   text-align: center;
   width: 10px;
   height: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 18px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
 .blocmenus .titre .fa-itunes-note {
-  font-size: 50px;
   color: #f04e5f;
   display: block;
-  background: -webkit-linear-gradient(left, #f04e5f, #f6916a) no-repeat;
-  background-clip: text;
+  background-image: -webkit-linear-gradient(left, #f04e5f, #f6916a);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .blocmenus .titre .icon {
   margin-top: 8%;
 }
-
 .blocmenus .titre .icon .fa-itunes-note {
   font-size: 85px;
 }
-
 .blocmenus .titre h3 {
   margin: 0%;
   margin-bottom: 6%;
 }
-
 .blocmenus caption {
   color: #3c1218;
   font-weight: bold;
   font-family: "Kalam", sans-serif;
 }
-
 .blocmenus tr td {
   color: #3c1218;
   font-family: "Kalam", sans-serif;
 }
-
 .blocmenus .prix {
   font-weight: bold;
 }
-
 .blocmenus ul {
   display: -webkit-box;
   list-style-type: none;
   -webkit-box-align: baseline;
   margin: 0 35%;
-  -webkit-padding-start: 0%;
-          padding-inline-start: 0%;
+  padding-inline-start: 0%;
 }
-
 .blocmenus ul li {
   margin: 0 2%;
 }
-
 .blocmenus ul li .icon {
-  background-color: #fcdfda;
   border: 1px solid #fcdfda;
   text-align: center;
   width: 10px;
   height: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 18px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
 .blocmenus ul li .fa-itunes-note {
-  font-size: 50px;
   color: #f04e5f;
   display: block;
-  background: -webkit-linear-gradient(left, #f04e5f, #f6916a) no-repeat;
-  background-clip: text;
+  background-image: -webkit-linear-gradient(left, #f04e5f, #f6916a);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .blocmenus ul li h4 {
   color: #3c1218;
   font-size: 40px;
-  font-family: Devonshire, sans-serif;
+  font-family: "Devonshire", sans-serif;
 }
 
 /*pied de page*/
@@ -239,12 +203,8 @@ h4 {
   background-color: #569c87;
   height: 50px;
   color: #f0c64f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 30px;
   font-weight: bold;
   position: fixed;
@@ -255,16 +215,21 @@ h4 {
 .legal {
   margin: 8px 20px;
 }
+.legal:hover {
+  animation: shake 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 
 .contact {
   margin: 8px 20px;
+}
+.contact:hover {
+  animation: shake 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
 a:visited {
   color: inherit;
 }
@@ -280,10 +245,12 @@ a:visited {
   h1 {
     font-size: 75px;
   }
+
   .blocmenus {
     min-width: 90%;
     max-width: 78%;
   }
+
   table {
     max-width: 100%;
     border-spacing: 6px;
@@ -300,37 +267,44 @@ a:visited {
     font-size: 20px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .legal {
     font-size: 25px;
   }
+
   .contact {
     font-size: 25px;
   }
 }
-
 /*Responsive mobile 625px*/
 @media screen and (max-width: 625px) {
   h1 {
     font-size: 60px;
   }
+
   main {
     margin: 0%;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 20px;
   }
+
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
   }
-  .blocmenus .titre {
-    font-size: 20px;
+  .blocmenus .titre .fa-itunes-note {
+    font-size: 45px;
   }
+  .blocmenus .titre h4 {
+    font-size: 30px;
+  }
+
   table caption {
     font-size: 20px;
   }
@@ -342,14 +316,25 @@ a:visited {
     width: 10%;
     font-size: 16px;
   }
-}
 
+  ul {
+    margin: 0 25%;
+  }
+  ul li .fa-itunes-note {
+    font-size: 30px;
+  }
+  ul li h4 {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 625px) {
   .legal {
     font-size: 15px;
   }
+
   .contact {
     font-size: 15px;
   }
 }
+
 /*# sourceMappingURL=lanoteenchantee.css.map */
