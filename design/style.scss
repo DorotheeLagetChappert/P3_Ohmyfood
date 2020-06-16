@@ -1,4 +1,9 @@
 @import "D:/P3_Ohmyfood/design/commun.scss";
+@import "D:/P3_Ohmyfood/Pages/menu1/lanoteenchantee.scss";
+@import "D:/P3_Ohmyfood/Pages/menu2/lechicalafrancaise.scss";
+@import "D:/P3_Ohmyfood/Pages/menu3/ledelicedespapilles.scss";
+@import "D:/P3_Ohmyfood/Pages/menu4/lapalettedugout.scss";
+@import "D:/P3_Ohmyfood/Pages/ML/mentionslegales.scss";
 /*Général*/
 @include global;
 /*Header*/
@@ -67,7 +72,7 @@
         .fontMenu1
         {
             font-family: "Devonshire", sans-serif;
-            font-size: 28px;
+            font-size: 31px;
             color: $colorMenu1;
         }
         .fontp1
@@ -111,7 +116,7 @@
         .fontMenu3
         {
             font-family: "Dancing Script", sans-serif;
-            font-size: 32px;
+            font-size: 35px;
             @include déliceColor;
         }
         .fontp3
