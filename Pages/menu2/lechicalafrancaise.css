@@ -103,6 +103,25 @@ table {
 table caption {
   font-size: 25px;
   padding: 2% 0;
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 26px;
+  font-family: georgia;
+}
+table caption:before, table caption:after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+table caption:before {
+  margin-left: -100%;
+  margin-right: 3em;
+}
+table caption:after {
+  margin-right: -100%;
+  margin-left: 3em;
 }
 table tr td {
   font-size: 20px;
@@ -119,6 +138,7 @@ h4 {
 }
 .blocmenus h3 {
   font-family: "Croissant One", sans-serif;
+  padding-top: 4%;
   font-size: 35px;
   color: #c67412;
   display: block;
@@ -138,6 +158,21 @@ h4 {
 
 caption {
   font-weight: bold;
+}
+
+#colorline1::before, #colorline1::after {
+  border-bottom: #c67412 solid;
+  border-width: 6px;
+}
+
+#colorline2::before, #colorline2::after {
+  border-bottom: #a56799 solid;
+  border-width: 6px;
+}
+
+#colorline3::before, #colorline3::after {
+  border-bottom: #6e4ccc solid;
+  border-width: 6px;
 }
 
 .entrance2 {

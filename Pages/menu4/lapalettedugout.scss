@@ -29,6 +29,11 @@ body
     {
         font-family: "Kalam", sans-serif;
     }
+    .greenline::before, .greenline::after
+    {
+        border-width: 6px;
+        border-bottom: $colorMenu4_1 solid;
+    }
     tr
     {
         td

@@ -40,6 +40,11 @@ body
         font-weight: bold;
         font-family: "Kalam", sans-serif;
     }
+    caption::before, caption::after
+    {
+        border-bottom:$colorMenu1 solid;
+        border-width: 6px;
+    }
     tr
     {
         td

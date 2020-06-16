@@ -103,6 +103,25 @@ table {
 table caption {
   font-size: 25px;
   padding: 2% 0;
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 26px;
+  font-family: georgia;
+}
+table caption:before, table caption:after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+table caption:before {
+  margin-left: -100%;
+  margin-right: 3em;
+}
+table caption:after {
+  margin-right: -100%;
+  margin-left: 3em;
 }
 table tr td {
   font-size: 20px;
@@ -123,6 +142,7 @@ h4 {
   background-image: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-top: 4%;
   font-size: 60px;
   font-family: "Dancing Script", sans-serif;
 }
@@ -138,6 +158,18 @@ h4 {
 }
 .blocmenus caption {
   font-family: "Kalam", sans-serif;
+}
+.blocmenus #blueline1::before, .blocmenus #blueline1::after {
+  border-bottom: #0228dd solid;
+  border-width: 6px;
+}
+.blocmenus #blueline2::before, .blocmenus #blueline2::after {
+  border-bottom: #0670f3 solid;
+  border-width: 6px;
+}
+.blocmenus #blueline3::before, .blocmenus #blueline3::after {
+  border-bottom: #229df9 solid;
+  border-width: 6px;
 }
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;

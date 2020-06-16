@@ -203,6 +203,28 @@ $colorMenu4_2: rgb(190, 255, 127);
         {
             font-size: 25px;
             padding: 2% 0;
+            padding:1em 0;
+            text-align:center;
+            overflow:hidden;
+            font-size:26px;
+            font-family:georgia;
+        }
+        caption:before, caption:after 
+        {
+        content:'';
+        width:40%;
+        display:inline-block;
+        vertical-align:middle;
+        }
+        caption:before 
+        {
+        margin-left:-100%;
+        margin-right:3em
+        }
+        caption:after 
+        {
+        margin-right:-100%;
+        margin-left:3em;
         }
         tr
         {

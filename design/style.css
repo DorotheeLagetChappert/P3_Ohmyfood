@@ -160,6 +160,25 @@ table {
 table caption {
   font-size: 25px;
   padding: 2% 0;
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 26px;
+  font-family: georgia;
+}
+table caption:before, table caption:after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+table caption:before {
+  margin-left: -100%;
+  margin-right: 3em;
+}
+table caption:after {
+  margin-right: -100%;
+  margin-left: 3em;
 }
 table tr td {
   font-size: 20px;
@@ -214,6 +233,10 @@ h4 {
   color: #3c1218;
   font-weight: bold;
   font-family: "Kalam", sans-serif;
+}
+.blocmenus caption::before, .blocmenus caption::after {
+  border-bottom: #3c1218 solid;
+  border-width: 6px;
 }
 .blocmenus tr td {
   color: #3c1218;
@@ -525,6 +548,25 @@ table {
 table caption {
   font-size: 25px;
   padding: 2% 0;
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 26px;
+  font-family: georgia;
+}
+table caption:before, table caption:after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+table caption:before {
+  margin-left: -100%;
+  margin-right: 3em;
+}
+table caption:after {
+  margin-right: -100%;
+  margin-left: 3em;
 }
 table tr td {
   font-size: 20px;
@@ -561,6 +603,21 @@ h4 {
 
 caption {
   font-weight: bold;
+}
+
+#colorline1::before, #colorline1::after {
+  border-bottom: #c67412 solid;
+  border-width: 6px;
+}
+
+#colorline2::before, #colorline2::after {
+  border-bottom: #a56799 solid;
+  border-width: 6px;
+}
+
+#colorline3::before, #colorline3::after {
+  border-bottom: #6e4ccc solid;
+  border-width: 6px;
 }
 
 .entrance2 {
@@ -802,6 +859,25 @@ table {
 table caption {
   font-size: 25px;
   padding: 2% 0;
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 26px;
+  font-family: georgia;
+}
+table caption:before, table caption:after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+table caption:before {
+  margin-left: -100%;
+  margin-right: 3em;
+}
+table caption:after {
+  margin-right: -100%;
+  margin-left: 3em;
 }
 table tr td {
   font-size: 20px;
@@ -838,6 +914,18 @@ h4 {
 }
 .blocmenus caption {
   font-family: "Kalam", sans-serif;
+}
+.blocmenus #blueline1::before, .blocmenus #blueline1::after {
+  border-bottom: #0228dd solid;
+  border-width: 6px;
+}
+.blocmenus #blueline2::before, .blocmenus #blueline2::after {
+  border-bottom: #0670f3 solid;
+  border-width: 6px;
+}
+.blocmenus #blueline3::before, .blocmenus #blueline3::after {
+  border-bottom: #229df9 solid;
+  border-width: 6px;
 }
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;
@@ -1077,6 +1165,25 @@ table {
 table caption {
   font-size: 25px;
   padding: 2% 0;
+  padding: 1em 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 26px;
+  font-family: georgia;
+}
+table caption:before, table caption:after {
+  content: "";
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+table caption:before {
+  margin-left: -100%;
+  margin-right: 3em;
+}
+table caption:after {
+  margin-right: -100%;
+  margin-left: 3em;
 }
 table tr td {
   font-size: 20px;
@@ -1113,6 +1220,10 @@ h4 {
 }
 .blocmenus caption {
   font-family: "Kalam", sans-serif;
+}
+.blocmenus .greenline::before, .blocmenus .greenline::after {
+  border-width: 6px;
+  border-bottom: #41963c solid;
 }
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;
@@ -1789,7 +1900,7 @@ a:visited {
     font-size: 18px;
   }
   .menubox2 .titre2 .fontp2 {
-    font-size: 28px;
+    font-size: 29px;
   }
 
   .menubox3 {

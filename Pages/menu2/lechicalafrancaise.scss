@@ -29,6 +29,21 @@ caption
 {
     font-weight: bold;
 }
+#colorline1::before, #colorline1::after
+{
+    border-bottom:$colorMenu2_1 solid;
+    border-width: 6px;
+}
+#colorline2::before, #colorline2::after
+{
+    border-bottom:$colorMenu2_2 solid;
+    border-width: 6px;
+}
+#colorline3::before, #colorline3::after
+{
+    border-bottom:$colorMenu2_3 solid;
+    border-width: 6px;
+}
 .entrance2
 {
     color: $colorMenu2_1;

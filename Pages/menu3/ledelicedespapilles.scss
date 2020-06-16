@@ -29,6 +29,21 @@ body
     {
         font-family: "Kalam", sans-serif;
     }
+    #blueline1::before, #blueline1::after
+    {
+        border-bottom:$colorMenu3_1 solid;
+        border-width: 6px;
+    }
+    #blueline2::before, #blueline2::after
+    {
+        border-bottom:$colorMenu3_2 solid;
+        border-width: 6px;
+    }
+    #blueline3::before, #blueline3::after
+    {
+        border-bottom:$colorMenu3_3 solid;
+        border-width: 6px;
+    }
     tr
     {
         td
