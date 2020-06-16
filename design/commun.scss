@@ -216,7 +216,6 @@ $colorMenu4_2: rgb(190, 255, 127);
     h4
     {
     text-align: center;
-    font-size: 20px;
     margin-bottom: 7%;
     }
 }
@@ -278,7 +277,6 @@ $colorMenu4_2: rgb(190, 255, 127);
         }
         table
         {
-            max-width: 100%;
             border-spacing: 6px;
             caption
             {
@@ -331,10 +329,6 @@ $colorMenu4_2: rgb(190, 255, 127);
         {
             font-size: 30px;
         }
-        h3
-        {
-            font-size: 30px;
-        }
         .blocmenus
         {
             width: 100%;
@@ -342,6 +336,7 @@ $colorMenu4_2: rgb(190, 255, 127);
         }
         table
         {
+            border-spacing: 15px;
             caption
             {
                 font-size: 20px;
@@ -350,12 +345,12 @@ $colorMenu4_2: rgb(190, 255, 127);
             {
                 .plat
                 {
-                    width: 70%;
+                    width: 60%;
                     font-size: 16px;
                 }
                 .prix
                 {
-                    width: 10%;
+                    width: 15%;
                     font-size: 16px;
                 }
             }

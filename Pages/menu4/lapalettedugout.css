@@ -111,7 +111,6 @@ table tr td {
 
 h4 {
   text-align: center;
-  font-size: 20px;
   margin-bottom: 7%;
 }
 
@@ -124,7 +123,8 @@ h4 {
   background-image: -webkit-linear-gradient(left, #41963c, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 35px;
+  padding-top: 4%;
+  font-size: 60px;
   font-family: "Kaushan Script", sans-serif;
 }
 .blocmenus h4 {
@@ -134,6 +134,7 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
+  padding-bottom: 4%;
   font-family: "Kaushan Script", sans-serif;
 }
 .blocmenus caption {
@@ -191,7 +192,6 @@ a:visited {
   }
 
   table {
-    max-width: 100%;
     border-spacing: 6px;
   }
   table caption {
@@ -204,6 +204,14 @@ a:visited {
   table tr .prix {
     width: 8%;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blocmenus h3 {
+    font-size: 40px;
+  }
+  .blocmenus h4 {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -229,41 +237,32 @@ a:visited {
     font-size: 30px;
   }
 
-  h3 {
-    font-size: 20px;
-  }
-
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
   }
-  .blocmenus .titre .fa-itunes-note {
-    font-size: 45px;
-  }
-  .blocmenus .titre h4 {
-    font-size: 30px;
-  }
 
+  table {
+    border-spacing: 15px;
+  }
   table caption {
     font-size: 20px;
   }
   table tr .plat {
-    width: 70%;
+    width: 60%;
     font-size: 16px;
   }
   table tr .prix {
-    width: 10%;
+    width: 15%;
     font-size: 16px;
   }
-
-  ul {
-    margin: 0 25%;
+}
+@media screen and (max-width: 625px) {
+  .blocmenus h3 {
+    font-size: 32px;
   }
-  ul li .fa-itunes-note {
-    font-size: 30px;
-  }
-  ul li h4 {
-    font-size: 20px;
+  .blocmenus h4 {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 625px) {

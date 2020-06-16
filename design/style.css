@@ -441,41 +441,25 @@ a:visited {
     font-size: 30px;
   }
 
-  h3 {
-    font-size: 20px;
-  }
-
   .blocmenus {
     width: 100%;
     margin: 1% auto 20% auto;
   }
-  .blocmenus .titre .fa-itunes-note {
-    font-size: 45px;
-  }
-  .blocmenus .titre h4 {
-    font-size: 30px;
-  }
 
+  table {
+    width: 100%;
+    border-spacing: 15px;
+  }
   table caption {
     font-size: 20px;
   }
   table tr .plat {
-    width: 70%;
+    width: 60%;
     font-size: 16px;
   }
   table tr .prix {
-    width: 10%;
+    width: 15%;
     font-size: 16px;
-  }
-
-  ul {
-    margin: 0 25%;
-  }
-  ul li .fa-itunes-note {
-    font-size: 30px;
-  }
-  ul li h4 {
-    font-size: 20px;
   }
 }
 @media screen and (max-width: 625px) {

@@ -14,13 +14,15 @@ body
     h3
     {
         @include paletteColor;
-        font-size: 35px;
+        padding-top: 4%;
+        font-size: 60px;
         font-family: "Kaushan Script", sans-serif;
     }
     h4
     {
         @include paletteColor;
         font-size: 30px;
+        padding-bottom: 4%;
         font-family: "Kaushan Script", sans-serif;
     }
     caption
@@ -39,7 +41,35 @@ body
 @include footer;
 /*Responsive tablette 1024px*/
 @include responsive_tablette;
+@media screen and (max-width:1024px)
+{
+    .blocmenus
+    {
+        h3
+        {
+            font-size: 40px;
+        }
+        h4
+        {
+            font-size: 24px;
+        }
+    }
+}
 @include footer_tablette;
 /*Responsive mobile 625px*/
 @include responsive_mobile;
+@media screen and (max-width:625px)
+{
+    .blocmenus
+    {
+        h3
+        {
+            font-size: 32px;
+        }
+        h4
+        {
+            font-size: 18px;
+        }
+    }
+}
 @include footer_mobile;
