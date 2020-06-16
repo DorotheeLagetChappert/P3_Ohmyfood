@@ -322,7 +322,6 @@ a:visited {
   }
 
   table {
-    max-width: 100%;
     border-spacing: 6px;
   }
   table caption {
@@ -447,7 +446,6 @@ a:visited {
   }
 
   table {
-    width: 100%;
     border-spacing: 15px;
   }
   table caption {
