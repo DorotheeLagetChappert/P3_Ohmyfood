@@ -160,7 +160,7 @@ h4 {
   font-family: "Kalam", sans-serif;
 }
 .blocmenus .greenline::before, .blocmenus .greenline::after {
-  border-width: 6px;
+  border-width: 15px;
   border-bottom: #41963c solid;
 }
 .blocmenus tr td {
@@ -269,7 +269,13 @@ a:visited {
     border-spacing: 15px;
   }
   table caption {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  table caption:before {
+    margin-right: 0.5em;
+  }
+  table caption:after {
+    margin-left: 0.5em;
   }
   table tr .plat {
     width: 60%;

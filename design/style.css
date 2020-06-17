@@ -158,7 +158,6 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
@@ -424,7 +423,13 @@ a:visited {
     border-spacing: 15px;
   }
   table caption {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  table caption:before {
+    margin-right: 0.5em;
+  }
+  table caption:after {
+    margin-left: 0.5em;
   }
   table tr .plat {
     width: 60%;
@@ -546,7 +551,6 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
@@ -726,7 +730,13 @@ a:visited {
     border-spacing: 15px;
   }
   table caption {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  table caption:before {
+    margin-right: 0.5em;
+  }
+  table caption:after {
+    margin-left: 0.5em;
   }
   table tr .plat {
     width: 60%;
@@ -738,11 +748,10 @@ a:visited {
   }
 }
 @media screen and (max-width: 625px) {
-  h3 {
+  .blocmenus h3 {
     font-size: 24px;
   }
-
-  h4 {
+  .blocmenus h4 {
     font-size: 18px;
   }
 }
@@ -857,7 +866,6 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
@@ -1033,7 +1041,13 @@ a:visited {
     border-spacing: 15px;
   }
   table caption {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  table caption:before {
+    margin-right: 0.5em;
+  }
+  table caption:after {
+    margin-left: 0.5em;
   }
   table tr .plat {
     width: 60%;
@@ -1163,7 +1177,6 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
@@ -1222,7 +1235,7 @@ h4 {
   font-family: "Kalam", sans-serif;
 }
 .blocmenus .greenline::before, .blocmenus .greenline::after {
-  border-width: 6px;
+  border-width: 15px;
   border-bottom: #41963c solid;
 }
 .blocmenus tr td {
@@ -1331,7 +1344,13 @@ a:visited {
     border-spacing: 15px;
   }
   table caption {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  table caption:before {
+    margin-right: 0.5em;
+  }
+  table caption:after {
+    margin-left: 0.5em;
   }
   table tr .plat {
     width: 60%;
@@ -1962,7 +1981,13 @@ a:visited {
     border-spacing: 15px;
   }
   table caption {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  table caption:before {
+    margin-right: 0.5em;
+  }
+  table caption:after {
+    margin-left: 0.5em;
   }
   table tr .plat {
     width: 60%;

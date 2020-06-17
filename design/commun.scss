@@ -201,7 +201,6 @@ $colorMenu4_2: rgb(190, 255, 127);
         min-width: 90%;
         caption
         {
-            font-size: 25px;
             padding: 2% 0;
             padding:1em 0;
             text-align:center;
@@ -361,7 +360,15 @@ $colorMenu4_2: rgb(190, 255, 127);
             border-spacing: 15px;
             caption
             {
-                font-size: 20px;
+                font-size: 16px;
+            }
+            caption:before 
+            {
+            margin-right:0.5em
+            }
+            caption:after 
+            {
+            margin-left:0.5em;
             }
             tr
             {
