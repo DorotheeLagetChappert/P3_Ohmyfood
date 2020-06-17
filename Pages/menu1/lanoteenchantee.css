@@ -101,7 +101,6 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
@@ -195,7 +194,6 @@ h4 {
   display: -webkit-inline-box;
   list-style-type: none;
   -webkit-box-align: baseline;
-  padding-inline-start: 0%;
 }
 .blocmenus .titleBottom ul li {
   margin: 0 2%;

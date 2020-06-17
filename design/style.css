@@ -251,7 +251,6 @@ h4 {
   display: -webkit-inline-box;
   list-style-type: none;
   -webkit-box-align: baseline;
-  padding-inline-start: 0%;
 }
 .blocmenus .titleBottom ul li {
   margin: 0 2%;
@@ -1235,8 +1234,8 @@ h4 {
   font-family: "Kalam", sans-serif;
 }
 .blocmenus .greenline::before, .blocmenus .greenline::after {
-  border-width: 15px;
-  border-bottom: #41963c solid;
+  border-width: 6px;
+  border: #41963c solid;
 }
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;
