@@ -31,8 +31,8 @@ body
     }
     .greenline::before, .greenline::after
     {
-        border-width: 15px;
-        border-bottom: $colorMenu4_1 solid;
+        border-width: 6px;
+        border: $colorMenu4_1 solid;
     }
     tr
     {

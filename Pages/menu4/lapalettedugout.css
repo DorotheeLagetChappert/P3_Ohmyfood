@@ -101,7 +101,6 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
@@ -160,8 +159,8 @@ h4 {
   font-family: "Kalam", sans-serif;
 }
 .blocmenus .greenline::before, .blocmenus .greenline::after {
-  border-width: 15px;
-  border-bottom: #41963c solid;
+  border-width: 6px;
+  border: #41963c solid;
 }
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;
