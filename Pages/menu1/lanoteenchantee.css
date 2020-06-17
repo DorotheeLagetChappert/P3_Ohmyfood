@@ -180,6 +180,11 @@ h4 {
   border-bottom: #3c1218 solid;
   border-width: 6px;
 }
+.blocmenus caption::before:hover, .blocmenus caption::after:hover {
+  text-decoration-color: #569c87;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
 .blocmenus tr td {
   color: #3c1218;
   font-family: "Kalam", sans-serif;

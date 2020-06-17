@@ -232,6 +232,12 @@ h4 {
   color: #3c1218;
   font-weight: bold;
   font-family: "Kalam", sans-serif;
+  text-decoration: none;
+  background-size: 0 100%;
+  transition: background-size 0.3s;
+}
+.blocmenus caption:hover {
+  background-size: 100% 100%;
 }
 .blocmenus caption::before, .blocmenus caption::after {
   border-bottom: #3c1218 solid;
