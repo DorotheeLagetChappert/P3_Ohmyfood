@@ -4,7 +4,8 @@
   "description": "Test",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./design/style.scss:./design/style.css"
+    "sass": "sass --watch ./design/style.scss:./design/style.css",
+    "prefix": "postcss ./design/style.css --use autoprefixer -d ./design/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist":"last 4 versions",
   "bugs": {
     "url": "https://github.com/Androelfi/P3_Ohmyfood/issues"
   },
