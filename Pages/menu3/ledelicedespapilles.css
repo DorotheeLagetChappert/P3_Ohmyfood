@@ -50,7 +50,6 @@
     transform: rotate(2deg);
   }
 }
-/*Animation soulignement*/
 /*en-tête*/
 /*main*/
 /*pied de page*/
@@ -101,13 +100,17 @@ table {
   min-width: 90%;
 }
 table caption {
-  font-size: 25px;
   padding: 2% 0;
   padding: 1em 0;
   text-align: center;
   overflow: hidden;
   font-size: 26px;
   font-family: georgia;
+}
+table caption:hover {
+  text-decoration-color: #f0c64f;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 table caption:before, table caption:after {
   content: "";

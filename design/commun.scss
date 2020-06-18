@@ -206,6 +206,12 @@ $colorMenu4_2: rgb(190, 255, 127);
             overflow:hidden;
             font-size:26px;
             font-family:georgia;
+            &:hover 
+            {
+                text-decoration-color : $primaryColorText;
+                text-decoration-line  : underline;
+                text-decoration-style : solid;
+            }
         }
         caption:before, caption:after 
         {

@@ -50,7 +50,6 @@
     transform: rotate(2deg);
   }
 }
-/*Animation soulignement*/
 /*en-tête*/
 /*main*/
 /*pied de page*/
@@ -107,6 +106,11 @@ table caption {
   overflow: hidden;
   font-size: 26px;
   font-family: georgia;
+}
+table caption:hover {
+  text-decoration-color: #f0c64f;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 table caption:before, table caption:after {
   content: "";
@@ -179,11 +183,6 @@ h4 {
 .blocmenus caption::before, .blocmenus caption::after {
   border-bottom: #3c1218 solid;
   border-width: 6px;
-}
-.blocmenus caption::before:hover, .blocmenus caption::after:hover {
-  text-decoration-color: #569c87;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
 }
 .blocmenus tr td {
   color: #3c1218;
