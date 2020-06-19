@@ -1301,14 +1301,12 @@ h4 {
   font-family: "Kalam", sans-serif;
 }
 .blocmenus caption::after {
-  margin-right: -100%;
   max-width: 250px;
   position: relative;
   background: linear-gradient(to left, #41963c, #beff7f);
   padding: 3px;
 }
 .blocmenus caption::before {
-  margin-right: -100%;
   max-width: 250px;
   position: relative;
   background: linear-gradient(to right, #41963c, #beff7f);
