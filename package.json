@@ -4,7 +4,7 @@
   "description": "Test",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./design/style.scss:./design/style.css",
+    "sass": "sass --watch ./design/style.scss:./design/style.css --style compressed",
     "prefix": "postcss ./design/style.css --use autoprefixer -d ./design/prefixed/"
   },
   "repository": {
