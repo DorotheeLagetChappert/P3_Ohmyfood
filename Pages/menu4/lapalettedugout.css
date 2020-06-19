@@ -107,10 +107,23 @@ table caption {
   font-size: 26px;
   font-family: georgia;
 }
-table caption:hover {
-  text-decoration-color: #f0c64f;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+table caption span {
+  position: relative;
+}
+table caption span::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f0c64f;
+  transition: 0.5s linear;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 50%;
+}
+table caption span:hover::after {
+  transform: scaleX(1);
 }
 table caption:before, table caption:after {
   content: "";
