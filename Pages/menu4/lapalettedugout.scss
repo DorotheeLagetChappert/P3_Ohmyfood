@@ -29,10 +29,19 @@ body
     {
         font-family: "Kalam", sans-serif;
     }
-    .greenline::before, .greenline::after
+    caption::after
     {
-        border-width: 6px;
-        border: $colorMenu4_1 solid;
+        max-width: 250px;
+        position: relative;
+        background: linear-gradient(to left, #41963c, #beff7f);
+        padding: 3px;
+    }
+    caption::before
+    {
+        max-width: 250px;
+        position: relative;
+        background: linear-gradient(to right, #41963c, #beff7f);
+        padding: 3px;
     }
     tr
     {

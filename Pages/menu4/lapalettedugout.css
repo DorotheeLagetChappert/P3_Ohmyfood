@@ -175,9 +175,17 @@ h4 {
 .blocmenus caption {
   font-family: "Kalam", sans-serif;
 }
-.blocmenus .greenline::before, .blocmenus .greenline::after {
-  border-width: 6px;
-  border: #41963c solid;
+.blocmenus caption::after {
+  max-width: 250px;
+  position: relative;
+  background: linear-gradient(to left, #41963c, #beff7f);
+  padding: 3px;
+}
+.blocmenus caption::before {
+  max-width: 250px;
+  position: relative;
+  background: linear-gradient(to right, #41963c, #beff7f);
+  padding: 3px;
 }
 .blocmenus tr td {
   font-family: "Kalam", sans-serif;
