@@ -77,6 +77,7 @@ table
     td
     {
         font-size: 16px;
+        word-wrap: break-word;
     }
 }
 /*Responsive mobile 625px*/
@@ -85,7 +86,6 @@ table
 {
     body
     {
-        min-width: 655px;
         height: 2020px;
     }
     h1
